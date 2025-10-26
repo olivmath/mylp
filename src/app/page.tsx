@@ -1,10 +1,9 @@
-import Hero from '@/components/Hero';
-import Projetos from '@/components/Projetos';
-import Hackathons from '@/components/Hackathons';
-import Testemunhos from '@/components/Testemunhos';
-import FAQ from '@/components/FAQ';
-import CTA from '@/components/CTA';
-import Footer from '@/components/Footer';
+import Hero from "@/components/Hero";
+import Projetos from "@/components/Projetos";
+import Hackathons from "@/components/Hackathons";
+import Testemunhos from "@/components/Testemunhos";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <Hackathons />
       <Testemunhos />
       <FAQ />
-      <CTA />
       <Footer />
     </div>
   );
