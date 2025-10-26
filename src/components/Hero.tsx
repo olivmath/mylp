@@ -12,7 +12,7 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-          Transformando
+          Transformando TESTE
           <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Ideias em Realidade
           </span>
