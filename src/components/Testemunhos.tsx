@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Testemunhos = () => {
   const testimonials = [
@@ -6,34 +6,38 @@ const Testemunhos = () => {
       name: "Maria Silva",
       role: "CEO, TechStart",
       company: "TechStart",
-      content: "Trabalhar com este desenvolvedor foi uma experiência excepcional. Entregou o projeto antes do prazo e superou todas as expectativas de qualidade.",
+      content:
+        "Trabalhar com este desenvolvedor foi uma experiência excepcional. Entregou o projeto antes do prazo e superou todas as expectativas de qualidade.",
       avatar: "👩‍💼",
-      rating: 5
+      rating: 5,
     },
     {
       name: "João Santos",
       role: "CTO, InnovaCorp",
       company: "InnovaCorp",
-      content: "Código limpo, documentação impecável e comunicação excelente. Definitivamente um profissional que recomendo para projetos complexos.",
+      content:
+        "Código limpo, documentação impecável e comunicação excelente. Definitivamente um profissional que recomendo para projetos complexos.",
       avatar: "👨‍💻",
-      rating: 5
+      rating: 5,
     },
     {
       name: "Ana Costa",
       role: "Product Manager, DigitalFlow",
       company: "DigitalFlow",
-      content: "Impressionante capacidade de transformar ideias complexas em soluções elegantes e funcionais. Um verdadeiro parceiro de negócios.",
+      content:
+        "Impressionante capacidade de transformar ideias complexas em soluções elegantes e funcionais. Um verdadeiro parceiro de negócios.",
       avatar: "👩‍🚀",
-      rating: 5
+      rating: 5,
     },
     {
       name: "Carlos Oliveira",
       role: "Founder, StartupX",
       company: "StartupX",
-      content: "Além das habilidades técnicas excepcionais, demonstrou grande compreensão do negócio e contribuiu com insights valiosos para o produto.",
+      content:
+        "Além das habilidades técnicas excepcionais, demonstrou grande compreensão do negócio e contribuiu com insights valiosos para o produto.",
       avatar: "👨‍🎯",
-      rating: 5
-    }
+      rating: 5,
+    },
   ];
 
   const renderStars = (rating: number) => {
@@ -41,7 +45,7 @@ const Testemunhos = () => {
       <span
         key={index}
         className={`text-xl ${
-          index < rating ? 'text-yellow-400' : 'text-gray-300'
+          index < rating ? "text-yellow-400" : "text-gray-300"
         }`}
       >
         ⭐
@@ -57,7 +61,8 @@ const Testemunhos = () => {
             O Que Dizem Sobre Meu Trabalho
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Feedback de clientes e parceiros que confiaram em meu trabalho para transformar suas ideias em realidade.
+            Feedback de clientes e parceiros que confiaram em meu trabalho para
+            transformar suas ideias em realidade.
           </p>
         </div>
 
@@ -80,49 +85,13 @@ const Testemunhos = () => {
                 </div>
               </div>
 
-              <div className="flex mb-4">
-                {renderStars(testimonial.rating)}
-              </div>
+              <div className="flex mb-4">{renderStars(testimonial.rating)}</div>
 
               <blockquote className="text-gray-700 leading-relaxed italic">
                 "{testimonial.content}"
               </blockquote>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Satisfação Garantida
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Mais de 50 projetos entregues com 100% de satisfação dos clientes. 
-                  Compromisso com qualidade, prazos e comunicação transparente.
-                </p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                <div className="text-sm text-gray-600 text-center">
-                  Taxa de<br />Satisfação
-                </div>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
-                <div className="text-sm text-gray-600 text-center">
-                  Projetos<br />Entregues
-                </div>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-4xl font-bold text-purple-600 mb-2">3</div>
-                <div className="text-sm text-gray-600 text-center">
-                  Anos de<br />Experiência
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
