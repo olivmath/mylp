@@ -5,60 +5,60 @@ import React from 'react';
 const Projetos = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "Plataforma completa de e-commerce com React, Node.js e PostgreSQL",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: "🛒",
-      link: "#"
+      title: "brbitcoin",
+      description: "SDK Bitcoin simples, seguro e flexível para Python, TypeScript e Rust com suporte a múltiplas plataformas",
+      tech: ["Rust", "Python", "TypeScript", "Bitcoin"],
+      image: "₿",
+      link: "https://github.com/olivmath/brbitcoin"
     },
     {
-      title: "Task Management App",
-      description: "Aplicativo de gerenciamento de tarefas com funcionalidades avançadas",
-      tech: ["Next.js", "TypeScript", "Prisma", "Tailwind"],
-      image: "📋",
-      link: "#"
+      title: "merkly",
+      description: "Implementação simples e eficiente de Merkle Tree em Python com validação criptográfica",
+      tech: ["Python", "Criptografia", "Estruturas de Dados"],
+      image: "🌳",
+      link: "https://github.com/olivmath/merkly"
     },
     {
-      title: "Weather Dashboard",
-      description: "Dashboard interativo para visualização de dados meteorológicos",
-      tech: ["Vue.js", "Chart.js", "API Integration"],
-      image: "🌤️",
-      link: "#"
+      title: "keccaky",
+      description: "Biblioteca segura e fácil de usar para hash Keccak, essencial em cadeias de blocos EVM",
+      tech: ["Python", "Keccak", "Hash"],
+      image: "🔐",
+      link: "https://github.com/olivmath/keccaky"
     },
     {
-      title: "Social Media Analytics",
-      description: "Ferramenta de análise de métricas para redes sociais",
-      tech: ["Python", "Django", "D3.js", "Redis"],
-      image: "📊",
-      link: "#"
+      title: "ed25519-axolotl",
+      description: "Implementação de criptografia de chave pública usando assinaturas estilo Ed25519 com chaves X25519",
+      tech: ["Rust", "Ed25519", "Criptografia"],
+      image: "🔑",
+      link: "https://github.com/olivmath/ed25519-axolotl"
     },
     {
-      title: "Mobile Banking App",
-      description: "Aplicativo bancário móvel com segurança avançada",
-      tech: ["React Native", "Firebase", "Biometrics"],
-      image: "💳",
-      link: "#"
+      title: "Lunes Node",
+      description: "Full Node da Lunes Network - aplicação que conecta à rede blockchain para validar e propagar blocos",
+      tech: ["Scala", "Blockchain", "Network"],
+      image: "⛓️",
+      link: "https://github.com/lunes-platform/lunes-node"
     },
     {
-      title: "AI Chatbot Platform",
-      description: "Plataforma de chatbot com inteligência artificial",
-      tech: ["Python", "TensorFlow", "NLP", "FastAPI"],
-      image: "🤖",
-      link: "#"
+      title: "Pós-Graduação em Blockchain",
+      description: "Programa educacional em blockchain na Nearx Innovation School impactando milhares de desenvolvedores na América Latina",
+      tech: ["Educação", "Blockchain", "Web3"],
+      image: "🎓",
+      link: "https://nearx.com.br"
     },
     {
-      title: "Real Estate Portal",
-      description: "Portal imobiliário com busca avançada e mapas",
-      tech: ["Angular", "Spring Boot", "MongoDB"],
-      image: "🏠",
-      link: "#"
+      title: "Smart Contract Architecture",
+      description: "Artigo publicado sobre 7-Layer Architecture para Smart Contracts - framework de design seguro e escalável",
+      tech: ["Smart Contracts", "Arquitetura", "Solidity"],
+      image: "🏗️",
+      link: "https://linkedin.com/in/olivmath"
     },
     {
-      title: "Fitness Tracker",
-      description: "Aplicativo de acompanhamento fitness e saúde",
-      tech: ["Flutter", "Dart", "HealthKit", "Charts"],
-      image: "💪",
-      link: "#"
+      title: "DREX Education Series",
+      description: "Série educacional sobre DREX (moeda digital do Brasil) explicando conceitos, implementação e impacto do sistema",
+      tech: ["Educação", "DREX", "Finance"],
+      image: "🪙",
+      link: "https://linkedin.com/in/olivmath"
     }
   ];
 
