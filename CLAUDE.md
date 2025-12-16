@@ -6,16 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Start development server (hot reload on http://localhost:3000)
-npm run dev
+pnpm dev
 
 # Build for production
-npm run build
+pnpm build
 
 # Run production server (requires build first)
-npm start
+pnpm start
 
 # Run ESLint
-npm run lint
+pnpm lint
 ```
 
 ## Project Overview
@@ -113,12 +113,12 @@ The site uses Next.js `Metadata` API in `src/app/layout.tsx` for:
 1. **Edit Content** - Update component data arrays directly in `src/components/*.tsx`
 2. **Edit Styling** - Use Tailwind classes in JSX or update `globals.css` for global styles
 3. **Add Components** - Create new file in `src/components/`, import in `page.tsx`
-4. **Hot Reload** - Changes auto-reload on `npm run dev`
+4. **Hot Reload** - Changes auto-reload on `pnpm dev`
 
 ### Linting
 
 ```bash
-npm run lint
+pnpm lint
 ```
 
 ESLint is configured for Next.js and TypeScript. Run before committing to catch issues.
@@ -132,9 +132,9 @@ No testing framework is currently set up. Add Jest or Vitest if needed.
 - **Portuguese Language** - Content is in Portuguese (pt-BR)
 - **No Backend** - This is a static site; no API routes or database
 - **No State Management** - Data is component-local (no Redux, Context, etc.)
-- **No Package Install** - Add new dependencies with care; keep the bundle lean
+- **Package Manager** - Always use **pnpm** for all package operations (install, add, remove)
 - **Performance** - Relies on Next.js defaults for optimization (code splitting, image optimization, etc.)
-- **Vercel Deployment** - Project is configured for Vercel; `npm run build` prepares for deployment
+- **Vercel Deployment** - Project is configured for Vercel; `pnpm build` prepares for deployment
 
 ## Common Development Tasks
 
