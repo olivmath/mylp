@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DevPortfolio - Transformando Ideias em Realidade",
-  description: "Desenvolvedor apaixonado por criar soluções inovadoras através de código limpo e design intuitivo. Especialista em React, Next.js, Node.js e muito mais.",
-  keywords: "desenvolvedor, programador, react, nextjs, nodejs, typescript, portfolio, web development",
-  authors: [{ name: "DevPortfolio" }],
+  title: "Lucas Oliveira - Senior Blockchain Engineer | DREX | Stellar",
+  description: "Senior Blockchain Engineer com 6+ anos de experiência. Principal Engineer no DREX (CBDC Brasil), Head of Education na NearX, Stellar Ambassador. Criador do Merkly (55k+ downloads). 4x Web3 hackathon winner.",
+  keywords: "blockchain, smart contracts, ethereum, stellar, rust, solidity, zkp, zero knowledge proofs, drex, cbdc, defi, web3, lucas oliveira, olivmath",
+  authors: [{ name: "Lucas Oliveira", url: "https://github.com/olivmath" }],
   openGraph: {
-    title: "DevPortfolio - Transformando Ideias em Realidade",
-    description: "Desenvolvedor apaixonado por criar soluções inovadoras através de código limpo e design intuitivo.",
+    title: "Lucas Oliveira - Senior Blockchain Engineer",
+    description: "Principal Engineer @ DREX | Head of Education @ NearX | Stellar Ambassador | Creator of Merkly",
     type: "website",
+    locale: "pt_BR",
   },
 };
 
