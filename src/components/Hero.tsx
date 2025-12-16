@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const Hero = () => {
   const companies = [
-    "Lunes L1 Protocol",
-    "Azion Edge Platform",
-    "Clear Sale",
-    "Central Bank of Brazil",
+    "DREX - Banco Central do Brasil",
+    "NearX Educational Platform",
     "Stellar Network",
-    "NearX Education Platform",
+    "OpenSense",
+    "Clearsale (CLSA3)",
+    "Azion Edge Platform",
   ];
 
   const images = [
@@ -20,7 +20,7 @@ const Hero = () => {
     "/posgrad.jpg",
   ];
 
-  const world = ["imagination", "vision", "idea", "dream", "spark"];
+  const world = ["code", "protocol", "innovation", "blockchain", "contract"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayWord, setDisplayWord] = useState(world[0]);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -177,9 +177,10 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
-              Over +5 years of experience architecting, building, and securing
-              blockchain products. My approach is anchored in: Security-Development Lifecycle, Teamwork
-              and share Knowledge.
+              6+ years architecting, building, and securing blockchain systems.
+              Principal Engineer at DREX (Brazil's CBDC), Head of Education at NearX,
+              and 4x Web3 hackathon winner. Creator of Merkly (55k+ downloads) and
+              Stellar Ambassador.
             </p>
 
           </div>
