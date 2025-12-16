@@ -3,39 +3,57 @@ import React from "react";
 const Testemunhos = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      role: "CEO, TechStart",
-      company: "TechStart",
+      name: "André Novaes",
+      role: "Produtor de Conteúdo & Branding",
+      company: "NearX",
       content:
-        "Trabalhar com este desenvolvedor foi uma experiência excepcional. Entregou o projeto antes do prazo e superou todas as expectativas de qualidade.",
+        "Trabalhar ao lado do Lucas é transformador. Ele estruturou programas de Blockchain e Web3 que se tornaram referência na América Latina. Lucas combina rigor técnico com empatia pedagógica, e sua capacidade de conectar ecossistemas e talentos torna cada projeto uma experiência de aprendizagem.",
+      avatar: "👨‍💼",
+      rating: 5,
+    },
+    {
+      name: "Suely Brusko",
+      role: "Tech Career Mentor",
+      company: "NearX",
+      content:
+        "Lucas é um dos profissionais mais inspiradores com quem já trabalhei. Como Head of Education, ele não só lidera a transformação de devs Web2 em mestres de Blockchain, mas criou o Postgraduate Program em Blockchain. Ele tem capacidade única de traduzir conceitos complexos em aprendizados práticos.",
       avatar: "👩‍💼",
       rating: 5,
     },
     {
-      name: "João Santos",
-      role: "CTO, InnovaCorp",
-      company: "InnovaCorp",
+      name: "Luis Malheiro",
+      role: "Senior Software Engineer",
+      company: "Azion",
       content:
-        "Código limpo, documentação impecável e comunicação excelente. Definitivamente um profissional que recomendo para projetos complexos.",
+        "Lucas is a remarkable professional with genuine passion for learning. His enthusiasm for work is infectious, and he is constantly seeking new knowledge to enhance his abilities. It's inspiring to see his dedication to self-improvement and technical excellence.",
       avatar: "👨‍💻",
       rating: 5,
     },
     {
-      name: "Ana Costa",
-      role: "Product Manager, DigitalFlow",
-      company: "DigitalFlow",
+      name: "Ronilton Nunes",
+      role: "Blockchain Engineer",
+      company: "Lunes Platform",
       content:
-        "Impressionante capacidade de transformar ideias complexas em soluções elegantes e funcionais. Um verdadeiro parceiro de negócios.",
-      avatar: "👩‍🚀",
+        "Exceptional Lead Blockchain with invaluable expertise in Blockchain technology. Your contributions to Lunes SDK, Blockchain Documentation, and Rust programming were outstanding. Your leadership qualities were instrumental in ensuring the project's success.",
+      avatar: "⚡",
       rating: 5,
     },
     {
-      name: "Carlos Oliveira",
-      role: "Founder, StartupX",
-      company: "StartupX",
+      name: "Isaque Coelho",
+      role: "AI Engineer",
+      company: "Lunes",
       content:
-        "Além das habilidades técnicas excepcionais, demonstrou grande compreensão do negócio e contribuiu com insights valiosos para o produto.",
-      avatar: "👨‍🎯",
+        "Lucas is an excellent leader and mentor who helped me follow in the programming world with perfect advice. His technical part is impeccable, as well as his leadership. In any company where I am, the first name to be recommended will always be his.",
+      avatar: "🤖",
+      rating: 5,
+    },
+    {
+      name: "André Viotto",
+      role: "Senior Backend Engineer",
+      company: "Lunes",
+      content:
+        "Lucas possui extrema capacidade técnica, excelente didática e criatividade fora do comum. Destaco sua proatividade, assertividade, empatia e excelente capacidade de comunicação.",
+      avatar: "💻",
       rating: 5,
     },
   ];
