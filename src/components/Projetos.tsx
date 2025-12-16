@@ -5,60 +5,60 @@ import React from 'react';
 const Projetos = () => {
   const projects = [
     {
+      title: "Merkly",
+      description: "Biblioteca Python mais usada para Merkle Trees em blockchain, com 79 stars e 55.000+ downloads no PyPI",
+      tech: ["Python", "Cryptography", "Merkle Trees"],
+      image: "🌳",
+      link: "https://github.com/olivmath/merkly"
+    },
+    {
+      title: "DREX - Real Digital",
+      description: "Principal Blockchain Engineer no projeto CBDC do Banco Central do Brasil. Arquitetura de smart contracts e privacy infrastructure com ZKP",
+      tech: ["Solidity", "ZKP", "CBDC", "Hyperledger Besu"],
+      image: "🏦",
+      link: "https://www.bcb.gov.br/estabilidadefinanceira/drex"
+    },
+    {
+      title: "NearX Education Platform",
+      description: "Head of Education criando programa de pós-graduação em Blockchain, bootcamps e conteúdo educacional para 8000+ alunos na LATAM",
+      tech: ["Education", "Web3", "Rust", "Solidity"],
+      image: "🎓",
+      link: "https://nearx.com.br"
+    },
+    {
+      title: "ed25519-axolotl",
+      description: "Implementação segura de criptografia de chave pública com Ed25519 e X25519 em Rust",
+      tech: ["Rust", "Cryptography", "Ed25519"],
+      image: "🔐",
+      link: "https://github.com/olivmath/ed25519-axolotl"
+    },
+    {
       title: "brbitcoin",
-      description: "SDK Bitcoin simples, seguro e flexível para Python, TypeScript e Rust com suporte a múltiplas plataformas",
+      description: "SDK Bitcoin para Python, TypeScript e Rust com suporte a múltiplas plataformas e operações de carteira",
       tech: ["Rust", "Python", "TypeScript", "Bitcoin"],
       image: "₿",
       link: "https://github.com/olivmath/brbitcoin"
     },
     {
-      title: "merkly",
-      description: "Implementação simples e eficiente de Merkle Tree em Python com validação criptográfica",
-      tech: ["Python", "Criptografia", "Estruturas de Dados"],
-      image: "🌳",
-      link: "https://github.com/olivmath/merkly"
-    },
-    {
-      title: "keccaky",
-      description: "Biblioteca segura e fácil de usar para hash Keccak, essencial em cadeias de blocos EVM",
-      tech: ["Python", "Keccak", "Hash"],
-      image: "🔐",
-      link: "https://github.com/olivmath/keccaky"
-    },
-    {
-      title: "ed25519-axolotl",
-      description: "Implementação de criptografia de chave pública usando assinaturas estilo Ed25519 com chaves X25519",
-      tech: ["Rust", "Ed25519", "Criptografia"],
-      image: "🔑",
-      link: "https://github.com/olivmath/ed25519-axolotl"
-    },
-    {
-      title: "Lunes Node",
-      description: "Full Node da Lunes Network - aplicação que conecta à rede blockchain para validar e propagar blocos",
-      tech: ["Scala", "Blockchain", "Network"],
+      title: "Lunes L1 Protocol",
+      description: "Tech Lead Blockchain desenvolvendo protocolo L1 token-centric. Redução de 83% no tempo de sync e gestão de validadores",
+      tech: ["Scala", "Rust", "L1 Protocol", "LevelDB"],
       image: "⛓️",
-      link: "https://github.com/lunes-platform/lunes-node"
+      link: "https://lunes.io"
     },
     {
-      title: "Pós-Graduação em Blockchain",
-      description: "Programa educacional em blockchain na Nearx Innovation School impactando milhares de desenvolvedores na América Latina",
-      tech: ["Educação", "Blockchain", "Web3"],
-      image: "🎓",
-      link: "https://nearx.com.br"
+      title: "Extracto DAO",
+      description: "Senior Blockchain Engineer liderando squad de 4 pessoas em DeFi protocol para mercado de commodities descentralizado",
+      tech: ["Solidity", "DeFi", "ERC2535", "GraphQL"],
+      image: "📈",
+      link: "https://github.com/olivmath"
     },
     {
-      title: "Smart Contract Architecture",
-      description: "Artigo publicado sobre 7-Layer Architecture para Smart Contracts - framework de design seguro e escalável",
-      tech: ["Smart Contracts", "Arquitetura", "Solidity"],
-      image: "🏗️",
-      link: "https://linkedin.com/in/olivmath"
-    },
-    {
-      title: "DREX Education Series",
-      description: "Série educacional sobre DREX (moeda digital do Brasil) explicando conceitos, implementação e impacto do sistema",
-      tech: ["Educação", "DREX", "Finance"],
-      image: "🪙",
-      link: "https://linkedin.com/in/olivmath"
+      title: "Stellar Network Contributions",
+      description: "Official Brazil Ambassador contribuindo com protocolo Stellar, smart contracts Soroban e educação para desenvolvedores",
+      tech: ["Stellar", "Soroban", "Rust"],
+      image: "⭐",
+      link: "https://stellar.org"
     }
   ];
 
