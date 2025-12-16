@@ -181,9 +181,12 @@ const Hero = () => {
               <div className="w-96 h-96 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center border-2 border-white/20 backdrop-blur-sm overflow-hidden shadow-2xl">
                 <Image
                   src={images[currentImageIndex]}
-                  alt="Portfolio"
+                  alt="Portfolio Lucas Oliveira"
                   width={384}
                   height={384}
+                  quality={90}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 384px"
+                  priority={currentImageIndex === 0}
                   className="image-fade w-full h-full object-cover"
                 />
               </div>
@@ -206,6 +209,8 @@ const Hero = () => {
                       alt={`Thumbnail ${index + 1}`}
                       width={80}
                       height={80}
+                      quality={90}
+                      priority={index === 0}
                       className="w-20 h-20 object-cover"
                     />
                   </button>
