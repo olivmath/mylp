@@ -12,18 +12,17 @@ const Footer = () => {
   ];
 
   const services = [
-    'Desenvolvimento Web',
-    'Aplicações Mobile',
-    'APIs e Backend',
-    'Consultoria Técnica',
-    'Code Review'
+    'Smart Contract Development',
+    'Blockchain Architecture',
+    'Zero-Knowledge Proofs',
+    'Protocol Engineering',
+    'Technical Mentoring'
   ];
 
   const socialLinks = [
-    { name: 'GitHub', icon: '🐙', href: '#' },
-    { name: 'LinkedIn', icon: '💼', href: '#' },
-    { name: 'Twitter', icon: '🐦', href: '#' },
-    { name: 'Instagram', icon: '📷', href: '#' }
+    { name: 'GitHub', icon: '🐙', href: 'https://github.com/olivmath' },
+    { name: 'LinkedIn', icon: '💼', href: 'https://linkedin.com/in/olivmath' },
+    { name: 'Twitter', icon: '🐦', href: 'https://twitter.com/olivmath_' }
   ];
 
   return (
@@ -33,10 +32,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-              DevPortfolio
+              Lucas Oliveira
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Transformando ideias em soluções digitais inovadoras através de código limpo e design intuitivo.
+              Senior Blockchain Engineer | 6+ Years Experience | DREX Principal Engineer | Stellar Ambassador | Creator of Merkly
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -89,23 +88,23 @@ const Footer = () => {
                 <span className="text-xl mr-3">📧</span>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-white">contato@exemplo.com</p>
+                  <a href="mailto:lucas@protonmail.com" className="text-white hover:text-blue-400 transition-colors">lucas@protonmail.com</a>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <span className="text-xl mr-3">💬</span>
                 <div>
                   <p className="text-gray-400 text-sm">WhatsApp</p>
-                  <p className="text-white">+55 (11) 99999-9999</p>
+                  <a href="https://wa.me/5548999013089" className="text-white hover:text-blue-400 transition-colors">+55 (48) 99901-3089</a>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <span className="text-xl mr-3">📍</span>
                 <div>
                   <p className="text-gray-400 text-sm">Localização</p>
-                  <p className="text-white">São Paulo, Brasil</p>
+                  <p className="text-white">Florianópolis, SC, Brasil</p>
                 </div>
               </div>
             </div>
@@ -140,7 +139,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} DevPortfolio. Todos os direitos reservados.
+              © {currentYear} Lucas Oliveira. Todos os direitos reservados.
             </p>
             <div className="mt-4 md:mt-0 flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
