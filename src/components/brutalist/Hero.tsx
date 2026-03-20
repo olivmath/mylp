@@ -40,7 +40,7 @@ export function Hero() {
         }}
       >
         <Image
-          src="/lucas-portrait.png"
+          src="/lucas-portrait-1.png"
           alt="Lucas Bispo de Oliveira"
           fill
           className="object-contain opacity-70 md:opacity-80 grayscale contrast-110"

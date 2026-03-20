@@ -60,7 +60,7 @@ export function Testemunhos() {
               transition={{ duration: 0.4 }}
             >
               <Image
-                src={person.image ?? "/lucas-portrait.png"}
+                src={person.image ?? "/lucas-portrait-1.png"}
                 alt={person.name}
                 fill
                 className={`object-cover ${person.image ? "opacity-60" : "opacity-25"} grayscale contrast-125`}
