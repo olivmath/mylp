@@ -186,18 +186,3 @@ export const testimonials = [
       "Lucas possui extrema capacidade técnica, excelente didática e criatividade fora do comum. Destaco sua proatividade, assertividade, empatia e excelente capacidade de comunicação.",
   },
 ];
-
-export const services = [
-  "Smart Contract Development",
-  "Blockchain Architecture",
-  "Zero-Knowledge Proofs",
-  "Protocol Engineering",
-  "Technical Mentoring",
-];
-
-export const quickLinks = [
-  { name: "Início", href: "#hero" },
-  { name: "Projetos", href: "#projetos" },
-  { name: "Hackathons", href: "#hackathons" },
-  { name: "Testemunhos", href: "#testemunhos" },
-];

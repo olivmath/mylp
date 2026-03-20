@@ -1,34 +1,10 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, JetBrains_Mono, Space_Grotesk, DM_Sans } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
-  display: "swap",
-});
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -51,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`scroll-smooth ${playfair.variable} ${inter.variable} ${jetbrains.variable} ${spaceGrotesk.variable} ${dmSans.variable}`}>
+    <html lang="pt-BR" className={`scroll-smooth ${spaceGrotesk.variable}`}>
       <body className="antialiased">
         {children}
       </body>

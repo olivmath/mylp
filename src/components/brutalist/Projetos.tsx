@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { projects } from "@/data/content";
 import { useTranslations } from "@/lib/i18n";
+import { SectionLabel } from "@/components/brutalist/SectionLabel";
 
 function StackedCard({
   project,
@@ -80,11 +81,7 @@ export function Projetos() {
   const { t } = useTranslations();
   return (
     <section id="projetos" className="bg-black text-white font-display">
-      <div className="border-t border-b border-neutral-800 px-4 md:px-8 py-3">
-        <span className="text-[10px] uppercase tracking-[0.4em] text-neutral-500">
-          {t.projetos.sectionLabel}
-        </span>
-      </div>
+      <SectionLabel label={t.projetos.sectionLabel} />
 
       {projects.map((project, i) => (
         <StackedCard

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useTranslations } from "@/lib/i18n";
 
@@ -11,22 +11,18 @@ export function Hero() {
   const metricsRef = useRef<HTMLDivElement>(null);
   const metricsInView = useInView(metricsRef, { once: true, margin: "-50px" });
 
-  const metrics = [
+  const metrics = useMemo(() => [
     { value: "55.000+", label: t.hero.metricDownloads },
     { value: "8000+", label: t.hero.metricStudents },
     { value: "6+", label: t.hero.metricExperience },
-  ];
+  ], [t]);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
   });
 
-  // Parallax: name moves slower than scroll
   const nameY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-
-  // Portrait scale-down: additional scale multiplier on top of base 1.3
-  // Goes from 1.3 (start) to 1.0 (scrolled past)
   const portraitScale = useTransform(scrollYProgress, [0, 1], [1.3, 1.0]);
 
   return (

@@ -4,26 +4,24 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { hackathons } from "@/data/content";
 import { useTranslations } from "@/lib/i18n";
+import { SectionLabel } from "@/components/brutalist/SectionLabel";
+
+const marqueeItems = [...hackathons, ...hackathons];
 
 export function Hackathons() {
   const { t } = useTranslations();
-  const items = [...hackathons, ...hackathons];
   const headerRef = useRef<HTMLDivElement>(null);
   const headerInView = useInView(headerRef, { once: true, margin: "-50px" });
 
   return (
     <section id="hackathons" className="bg-black text-white font-display overflow-hidden">
-      {/* Section label - fade in */}
       <motion.div
         ref={headerRef}
-        className="border-t border-b border-neutral-800 px-4 md:px-8 py-3"
         initial={{ opacity: 0 }}
         animate={headerInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <span className="text-[10px] uppercase tracking-[0.4em] text-neutral-500">
-          {t.hackathons.sectionLabel}
-        </span>
+        <SectionLabel label={t.hackathons.sectionLabel} />
       </motion.div>
 
       {/* Horizontal marquee ribbon */}
@@ -35,24 +33,21 @@ export function Hackathons() {
             willChange: "transform",
           }}
         >
-          {items.map((hack, i) => (
+          {marqueeItems.map((hack, i) => (
             <div
               key={`${hack.name}-${i}`}
               className="flex-shrink-0 w-[85vw] md:w-[50vw] lg:w-[35vw] border-r border-neutral-800 px-6 md:px-10 py-6 flex flex-col justify-between relative"
             >
-              {/* Year */}
               <span className="text-[100px] md:text-[140px] font-black leading-none text-neutral-900 select-none">
                 {hack.year}
               </span>
 
-              {/* Hackathon name */}
               <div className="mt-[-30px] md:mt-[-40px] relative z-10">
                 <h3 className="text-lg md:text-xl font-bold uppercase tracking-tight">
                   {hack.name}
                 </h3>
               </div>
 
-              {/* 1st Place badge - rotated */}
               <div
                 className="absolute top-6 right-6 bg-[#FF5722] text-black px-3 py-1 font-black text-xs uppercase tracking-wider"
                 style={{ transform: "rotate(-12deg)" }}
@@ -60,7 +55,6 @@ export function Hackathons() {
                 {hack.position}
               </div>
 
-              {/* Tech tags */}
               <div className="flex gap-2 flex-wrap mt-4">
                 {hack.tech.slice(0, 3).map((t) => (
                   <span
