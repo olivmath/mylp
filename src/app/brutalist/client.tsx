@@ -11,7 +11,7 @@ import { HeaderBar } from "@/components/brutalist/HeaderBar";
 export function BrutalistClient() {
   return (
     <LocaleProvider>
-      <main className="bg-black font-display selection:bg-[#FF5722] selection:text-black scroll-smooth">
+      <main className="bg-black selection:bg-[#FF5722] selection:text-black scroll-smooth">
         <HeaderBar />
         <Hero />
         <Projetos />

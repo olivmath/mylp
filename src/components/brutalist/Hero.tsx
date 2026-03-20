@@ -29,7 +29,7 @@ export function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen bg-black text-white flex flex-col justify-between overflow-hidden font-display"
+      className="relative min-h-screen bg-black text-white flex flex-col justify-between overflow-hidden"
     >
       {/* Portrait - desktop: right side behind text, mobile: top background */}
       <motion.div

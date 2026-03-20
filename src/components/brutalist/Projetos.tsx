@@ -80,7 +80,7 @@ function StackedCard({
 export function Projetos() {
   const { t } = useTranslations();
   return (
-    <section id="projetos" className="bg-black text-white font-display">
+    <section id="projetos" className="bg-black text-white">
       <SectionLabel label={t.projetos.sectionLabel} />
 
       {projects.map((project, i) => (

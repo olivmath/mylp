@@ -42,7 +42,7 @@ export function Testemunhos() {
   return (
     <section
       id="testemunhos"
-      className="font-display cursor-pointer overflow-hidden bg-black text-white"
+      className="cursor-pointer overflow-hidden bg-black text-white"
       onClick={advance}
     >
       <SectionLabel label={t.testemunhos.sectionLabel} />
