@@ -23,7 +23,7 @@ export function Hero() {
   });
 
   const nameY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const portraitScale = useTransform(scrollYProgress, [0, 1], [1.3, 1.0]);
+  const portraitScale = useTransform(scrollYProgress, [0, 1], [1.5, 1.2]);
 
   return (
     <section
@@ -35,7 +35,7 @@ export function Hero() {
       <motion.div
         className="absolute top-0 right-0 w-full h-[60%] md:w-[55%] md:h-full pointer-events-none"
         style={{
-          translateY: "-16%",
+          translateY: "0%",
           scale: portraitScale,
         }}
       >
@@ -43,10 +43,10 @@ export function Hero() {
           src="/lucas-portrait.png"
           alt="Lucas Bispo de Oliveira"
           fill
-          className="object-contain opacity-40 md:opacity-60 grayscale contrast-125"
+          className="object-contain opacity-70 md:opacity-80 grayscale contrast-110"
           priority
           sizes="(max-width: 768px) 100vw, 55vw"
-          style={{ objectPosition: "center 20%" }}
+          style={{ objectPosition: "center 30%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
@@ -62,11 +62,11 @@ export function Hero() {
           className="text-[18vw] sm:text-[16vw] md:text-[14vw] font-black leading-[0.82] tracking-tighter uppercase select-none"
           style={{ marginLeft: "-0.04em", marginRight: "-0.04em" }}
         >
-          Lucas
+          <span className="text-[#0000FF]">Lucas</span>
           <br />
           <span className="text-[15vw] sm:text-[16vw] md:text-[14vw]">Bispo de</span>
           <br />
-          <span className="text-[#FF5722]">Oliveira</span>
+          Oliveira
         </h1>
       </motion.div>
 
@@ -88,7 +88,7 @@ export function Hero() {
         <div className="grid grid-cols-3 divide-x divide-neutral-800">
           {metrics.map((m) => (
             <div key={m.label} className="px-2 sm:px-4 md:px-8 py-3 sm:py-5">
-              <span className="text-[#FF5722] text-xl sm:text-3xl md:text-5xl font-black block">
+              <span className="text-[#0000FF] text-xl sm:text-3xl md:text-5xl font-black block">
                 {m.value}
               </span>
               <span className="text-[8px] sm:text-[10px] md:text-xs uppercase tracking-[0.1em] sm:tracking-[0.2em] text-neutral-500 mt-1 block">

@@ -46,10 +46,13 @@ export function Hackathons() {
                 <h3 className="text-lg md:text-xl font-bold uppercase tracking-tight">
                   {hack.name}
                 </h3>
+                <span className="text-[9px] uppercase tracking-[0.3em] text-neutral-500 mt-1 block">
+                  {hack.location}
+                </span>
               </div>
 
               <div
-                className="absolute top-6 right-6 bg-[#FF5722] text-black px-3 py-1 font-black text-xs uppercase tracking-wider"
+                className="absolute top-6 right-6 bg-[#0000FF] text-black px-3 py-1 font-black text-xs uppercase tracking-wider"
                 style={{ transform: "rotate(-12deg)" }}
               >
                 {hack.position}

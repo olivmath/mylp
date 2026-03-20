@@ -17,7 +17,7 @@ export function HeaderBar() {
           <div className="w-px h-4 bg-neutral-800" />
           <a
             href="#hero"
-            className="text-sm font-black uppercase tracking-wider text-white hover:text-[#FF5722] transition-colors"
+            className="text-sm font-black uppercase tracking-wider text-white hover:text-[#0000FF] transition-colors"
           >
             olivmath
           </a>
@@ -31,7 +31,7 @@ export function HeaderBar() {
               onClick={() => setLocale(loc)}
               className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider transition-colors duration-150 cursor-pointer"
               style={{
-                backgroundColor: locale === loc ? "#FF5722" : "transparent",
+                backgroundColor: locale === loc ? "#0000FF" : "transparent",
                 color: locale === loc ? "#000" : "#737373",
               }}
             >

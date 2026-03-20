@@ -39,7 +39,7 @@ export const profile = {
 export const projects = [
   {
     id: "drex",
-    title: "DREX - Real Digital",
+    title: "Brazil CBDC - DREX",
     description:
       "Principal Blockchain Engineer no projeto CBDC do Banco Central do Brasil. Arquitetura de smart contracts e privacy infrastructure com ZKP",
     tech: ["Solidity", "ZKP", "CBDC", "Hyperledger Besu"],
@@ -56,31 +56,6 @@ export const projects = [
     featured: true,
   },
   {
-    id: "nearx",
-    title: "NearX Education Platform",
-    description:
-      "Head of Education criando programa de pós-graduação em Blockchain, bootcamps e conteúdo educacional para 8000+ alunos na LATAM",
-    tech: ["Education", "Web3", "Rust", "Solidity"],
-    link: "https://nearx.com.br",
-    featured: true,
-  },
-  {
-    id: "ed25519",
-    title: "ed25519-axolotl",
-    description:
-      "Implementação segura de criptografia de chave pública com Ed25519 e X25519 em Rust",
-    tech: ["Rust", "Cryptography", "Ed25519"],
-    link: "https://github.com/olivmath/ed25519-axolotl",
-  },
-  {
-    id: "brbitcoin",
-    title: "brbitcoin",
-    description:
-      "SDK Bitcoin para Python, TypeScript e Rust com suporte a múltiplas plataformas e operações de carteira",
-    tech: ["Rust", "Python", "TypeScript", "Bitcoin"],
-    link: "https://github.com/olivmath/brbitcoin",
-  },
-  {
     id: "lunes",
     title: "Lunes L1 Protocol",
     description:
@@ -89,56 +64,74 @@ export const projects = [
     link: "https://lunes.io",
   },
   {
-    id: "extracto",
-    title: "Extracto DAO",
-    description:
-      "Senior Blockchain Engineer liderando squad de 4 pessoas em DeFi protocol para mercado de commodities descentralizado",
-    tech: ["Solidity", "DeFi", "ERC2535", "GraphQL"],
-    link: "https://github.com/olivmath",
-  },
-  {
     id: "stellar",
-    title: "Stellar Network Contributions",
+    title: "Stellar Network",
     description:
       "Official Brazil Ambassador contribuindo com protocolo Stellar, smart contracts Soroban e educação para desenvolvedores",
     tech: ["Stellar", "Soroban", "Rust"],
     link: "https://stellar.org",
   },
+  {
+    id: "postgrad",
+    title: "PostGraduation Program",
+    description:
+      "Criação e liderança do programa de pós-graduação em Blockchain na NearX, formando 8000+ alunos na América Latina",
+    tech: ["Education", "Blockchain", "Web3", "Curriculum Design"],
+    link: "https://nearx.com.br",
+  },
+  {
+    id: "30day30blockchain",
+    title: "30day/30blockchain",
+    description:
+      "Desafio de 30 dias construindo 30 projetos blockchain diferentes, explorando múltiplas chains e protocolos",
+    tech: ["Rust", "Solidity", "TypeScript", "Multi-chain"],
+    link: "https://github.com/olivmath",
+  },
 ];
 
 export const hackathons = [
   {
-    name: "NASA Space Apps Challenge",
+    name: "Stellar Hackathon",
     year: "2024",
-    position: "1º Lugar",
-    description:
-      "Solução blockchain para rastreamento de dados de satélites e verificação de integridade usando Rust e APIs espaciais",
-    tech: ["Rust", "Blockchain", "NASA APIs", "Satellite Data"],
+    position: "1st Place",
+    location: "Argentina",
+    tech: ["Stellar", "Soroban", "Rust"],
     featured: true,
   },
   {
-    name: "Stellar Network Hackathon",
+    name: "XRPL Hackathon",
+    year: "2025",
+    position: "2nd Place",
+    location: "Brazil",
+    tech: ["XRPL", "Solidity", "TypeScript"],
+  },
+  {
+    name: "Rayls Hackathon",
+    year: "2025",
+    position: "5th Place",
+    location: "Argentina",
+    tech: ["Rayls", "Blockchain"],
+  },
+  {
+    name: "ZKgames",
+    year: "2026",
+    position: "Honorable Mention",
+    location: "Global",
+    tech: ["Stellar", "ZKP", "Gaming"],
+  },
+  {
+    name: "Chiliz Hackathon",
     year: "2024",
-    position: "1º Lugar",
-    description:
-      "Protocolo de pagamentos em stream na Aleph pop-city Buenos Aires com Stellar Soroban smart contracts",
-    tech: ["Stellar", "Soroban", "Rust", "DeFi"],
+    position: "2nd Place",
+    location: "Global",
+    tech: ["Chiliz", "Solidity", "GameFi"],
   },
   {
-    name: "XRPL Hackathon Brazil",
+    name: "NASA Space Apps",
     year: "2022",
-    position: "1º Lugar",
-    description:
-      "Bridge blockchain entre XRP Ledger e Ethereum com suporte a transferências cross-chain de múltiplos ativos",
-    tech: ["XRPL", "Solidity", "TypeScript", "Bridge"],
-  },
-  {
-    name: "Chiliz Game Hackathon",
-    year: "2022",
-    position: "1º Lugar",
-    description:
-      "Game de estratégia com tokenomics integrados usando CHZ e mechanics de DeFi para engajamento de fãs",
-    tech: ["Solidity", "React", "Chiliz", "GameFi"],
+    position: "2nd Place",
+    location: "Florianópolis",
+    tech: ["Rust", "NASA APIs", "Blockchain"],
   },
 ];
 
@@ -147,6 +140,7 @@ export const testimonials = [
     name: "André Novaes",
     role: "Produtor de Conteúdo & Branding",
     company: "NearX",
+    image: "/andre-novaes.png",
     content:
       "Trabalhar ao lado do Lucas é transformador. Ele estruturou programas de Blockchain e Web3 que se tornaram referência na América Latina. Lucas combina rigor técnico com empatia pedagógica, e sua capacidade de conectar ecossistemas e talentos torna cada projeto uma experiência de aprendizagem.",
   },
@@ -154,6 +148,7 @@ export const testimonials = [
     name: "Suely Brusko",
     role: "Tech Career Mentor",
     company: "NearX",
+    image: "/suely-brusko.png",
     content:
       "Lucas é um dos profissionais mais inspiradores com quem já trabalhei. Como Head of Education, ele não só lidera a transformação de devs Web2 em mestres de Blockchain, mas criou o Postgraduate Program em Blockchain. Ele tem capacidade única de traduzir conceitos complexos em aprendizados práticos.",
   },
@@ -161,6 +156,7 @@ export const testimonials = [
     name: "Luis Malheiro",
     role: "Senior Software Engineer",
     company: "Azion",
+    image: "/luis-malheiro.jpeg",
     content:
       "Lucas is a remarkable professional with genuine passion for learning. His enthusiasm for work is infectious, and he is constantly seeking new knowledge to enhance his abilities. It's inspiring to see his dedication to self-improvement and technical excellence.",
   },
@@ -168,6 +164,7 @@ export const testimonials = [
     name: "Ronilton Nunes",
     role: "Blockchain Engineer",
     company: "Lunes Platform",
+    image: "/ronilton-nunes.png",
     content:
       "Exceptional Lead Blockchain with invaluable expertise in Blockchain technology. Your contributions to Lunes SDK, Blockchain Documentation, and Rust programming were outstanding. Your leadership qualities were instrumental in ensuring the project's success.",
   },
@@ -175,6 +172,7 @@ export const testimonials = [
     name: "Isaque Coelho",
     role: "AI Engineer",
     company: "Lunes",
+    image: "/isaque-coelho.png",
     content:
       "Lucas is an excellent leader and mentor who helped me follow in the programming world with perfect advice. His technical part is impeccable, as well as his leadership. In any company where I am, the first name to be recommended will always be his.",
   },
@@ -182,6 +180,7 @@ export const testimonials = [
     name: "André Viotto",
     role: "Senior Backend Engineer",
     company: "Lunes",
+    image: "/andre-viotto.png",
     content:
       "Lucas possui extrema capacidade técnica, excelente didática e criatividade fora do comum. Destaco sua proatividade, assertividade, empatia e excelente capacidade de comunicação.",
   },

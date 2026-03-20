@@ -4,7 +4,6 @@ import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -27,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`scroll-smooth ${spaceGrotesk.variable}`}>
-      <body className="antialiased">
+    <html lang="en" className="scroll-smooth">
+      <body className="antialiased" style={spaceGrotesk.style}>
         {children}
       </body>
     </html>

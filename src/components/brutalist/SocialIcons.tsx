@@ -28,7 +28,7 @@ export function SocialIcons({ size = "w-4 h-4" }: { size?: string }) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={s.label}
-          className="text-neutral-500 hover:text-[#FF5722] transition-colors"
+          className="text-neutral-500 hover:text-[#0000FF] transition-colors"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" className={size}>
             <path d={s.path} />

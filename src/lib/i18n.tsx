@@ -15,8 +15,8 @@ import {
 } from "@/lib/translations/brutalist";
 
 const STORAGE_KEY = "brutalist-locale";
-const DEFAULT_LOCALE: Locale = "pt";
-const SUPPORTED_LOCALES: Locale[] = ["pt", "en", "es"];
+const DEFAULT_LOCALE: Locale = "en";
+const SUPPORTED_LOCALES: Locale[] = ["en", "pt", "es"];
 
 type TranslationSet = (typeof translations)[Locale];
 
