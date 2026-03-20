@@ -50,7 +50,7 @@ export const projects = [
     id: "merkly",
     title: "Merkly",
     description:
-      "Biblioteca Python mais usada para Merkle Trees em blockchain, com 79 stars e 55.000+ downloads no PyPI",
+      "Biblioteca Python mais usada para Merkle Trees em blockchain, com 79 stars e 58.967 downloads no PyPI",
     tech: ["Python", "Cryptography", "Merkle Trees"],
     link: "https://github.com/olivmath/merkly",
     featured: true,

@@ -12,7 +12,7 @@ export function Hero() {
   const metricsInView = useInView(metricsRef, { once: true, margin: "-50px" });
 
   const metrics = useMemo(() => [
-    { value: "55.000+", label: t.hero.metricDownloads },
+    { value: "58.967", label: t.hero.metricDownloads, link: "https://pepy.tech/projects/merkly" },
     { value: "8000+", label: t.hero.metricStudents },
     { value: "6+", label: t.hero.metricExperience },
   ], [t]);
@@ -43,14 +43,14 @@ export function Hero() {
           src="/lucas-portrait-1.png"
           alt="Lucas Bispo de Oliveira"
           fill
-          className="object-contain opacity-70 md:opacity-80 grayscale contrast-110"
+          className="object-contain opacity-100 grayscale contrast-110"
           priority
           sizes="(max-width: 768px) 100vw, 55vw"
           style={{ objectPosition: "center 30%" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
       </motion.div>
 
       {/* Name - parallax */}
@@ -88,9 +88,15 @@ export function Hero() {
         <div className="grid grid-cols-3 divide-x divide-neutral-800">
           {metrics.map((m) => (
             <div key={m.label} className="px-2 sm:px-4 md:px-8 py-3 sm:py-5">
-              <span className="text-[#0000FF] text-xl sm:text-3xl md:text-5xl font-black block">
-                {m.value}
-              </span>
+              {m.link ? (
+                <a href={m.link} target="_blank" rel="noopener noreferrer" className="text-[#0000FF] text-xl sm:text-3xl md:text-5xl font-black block hover:text-white transition-colors">
+                  {m.value}
+                </a>
+              ) : (
+                <span className="text-[#0000FF] text-xl sm:text-3xl md:text-5xl font-black block">
+                  {m.value}
+                </span>
+              )}
               <span className="text-[8px] sm:text-[10px] md:text-xs uppercase tracking-[0.1em] sm:tracking-[0.2em] text-neutral-500 mt-1 block">
                 {m.label}
               </span>

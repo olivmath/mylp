@@ -63,7 +63,7 @@ export function Testemunhos() {
                 src={person.image ?? "/lucas-portrait-1.png"}
                 alt={person.name}
                 fill
-                className={`object-cover ${person.image ? "opacity-60" : "opacity-25"} grayscale contrast-125`}
+                className={`object-cover ${person.image ? "opacity-80" : "opacity-40"} grayscale contrast-110`}
                 sizes="(max-width: 768px) 100vw, 40vw"
               />
             </motion.div>

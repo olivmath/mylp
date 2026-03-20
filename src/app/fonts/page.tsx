@@ -153,7 +153,7 @@ export default function FontSamples() {
                   </p>
                   <div className="flex gap-12 mt-4">
                     <div>
-                      <span className="text-5xl text-[#0000FF]">55.000+</span>
+                      <span className="text-5xl text-[#0000FF]">58.967</span>
                       <span className="text-sm text-neutral-500 block uppercase">downloads</span>
                     </div>
                     <div>
