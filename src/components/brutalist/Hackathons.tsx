@@ -16,7 +16,7 @@ export function Hackathons() {
   const headerInView = useInView(headerRef, { once: true, margin: "-50px" });
 
   return (
-    <section id="hackathons" className="bg-[var(--background)] text-[var(--foreground)] overflow-hidden transition-colors duration-300">
+    <section id="hackathons" className="bg-[var(--background)] text-[var(--foreground)] overflow-hidden">
       <motion.div
         ref={headerRef}
         initial={{ opacity: 0 }}

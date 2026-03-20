@@ -4,7 +4,7 @@ export const translations = {
   pt: {
     hero: {
       headline:
-        "Matemático\u00A0\u00A0|\u00A0\u00A0Engenheiro Criptografia\u00A0\u00A0|\u00A0\u00A0Embaixador Oficial Stellar Brasil",
+        "Matemático\u00A0\u00A0|\u00A0\u00A0Engenheiro de Criptografia\u00A0\u00A0|\u00A0\u00A0Embaixador Oficial Stellar Brasil",
       metricDownloads: "downloads em bibliotecas de criptografia",
       metricStudents: "alunos",
       metricExperience: "anos de experiência em blockchain",

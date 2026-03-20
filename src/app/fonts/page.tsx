@@ -149,7 +149,7 @@ export default function FontSamples() {
                     Senior Blockchain Engineer
                   </p>
                   <p className="text-xl uppercase tracking-wider text-neutral-400">
-                    Matemático | Engenheiro Criptografia | Embaixador Stellar
+                    Matemático | Engenheiro de Criptografia | Embaixador Stellar
                   </p>
                   <div className="flex gap-12 mt-4">
                     <div>

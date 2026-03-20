@@ -93,7 +93,7 @@ export function Projetos() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="projetos" className="bg-[#F2F2F2] text-[#0D0D0D] transition-colors duration-300">
+    <section id="projetos" className="bg-[#F2F2F2] text-[#0D0D0D]">
       <SectionLabel label={t.projetos.sectionLabel} />
 
       {projects.map((project, i) => (

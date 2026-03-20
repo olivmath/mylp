@@ -65,7 +65,7 @@ export function Testemunhos() {
   return (
     <section
       id="testemunhos"
-      className="cursor-pointer overflow-hidden bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300"
+      className="cursor-pointer overflow-hidden bg-[var(--background)] text-[var(--foreground)]"
       onClick={advance}
     >
       <SectionLabel label={t.testemunhos.sectionLabel} />

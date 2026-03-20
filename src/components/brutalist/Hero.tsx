@@ -49,7 +49,7 @@ export function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col overflow-hidden transition-colors duration-300"
+      className="relative min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col overflow-hidden"
     >
       {/* Portrait */}
       <div className="absolute top-0 right-0 w-full h-[60%] md:w-[50%] md:h-full pointer-events-none">

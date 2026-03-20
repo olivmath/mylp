@@ -11,7 +11,7 @@ export function Footer() {
     <motion.footer
       ref={ref}
       id="footer"
-      className="bg-[var(--background)] text-[var(--foreground)] border-t border-neutral-800 transition-colors duration-300"
+      className="bg-[var(--background)] text-[var(--foreground)] border-t border-neutral-800"
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
