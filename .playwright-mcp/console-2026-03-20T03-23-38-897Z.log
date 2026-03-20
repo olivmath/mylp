@@ -1,0 +1,16 @@
+[    3802ms] TypeError: d[b].href.indexOf is not a function
+    at <anonymous>:2:11
+    at <anonymous>:2:81
+    at https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:819:429
+    at sR (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:821:31)
+    at Nd.rR (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:818:92)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:306:187)
+    at k.apply (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:237:466)
+    at hb (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:201:719)
+    at gb (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:201:470)
+    at Nd.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-KJ37X4Q:261:473)
+[    4251ms] [WARNING] SplitText called before fonts loaded @ https://coralcap.co/wp-content/themes/coral-capital/build/index-UiMlAvw3.js:39
+[    4256ms] [WARNING] SplitText called before fonts loaded @ https://coralcap.co/wp-content/themes/coral-capital/build/index-UiMlAvw3.js:39
+[    4268ms] [WARNING] SplitText called before fonts loaded @ https://coralcap.co/wp-content/themes/coral-capital/build/index-UiMlAvw3.js:39
+[    4313ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 1305505316462892. @ https://connect.facebook.net/en_US/fbevents.js:175
+[    4960ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://coralcap.co'). @ https://www.youtube.com/s/player/1ebf2aa6/www-widgetapi.vflset/www-widgetapi.js:209

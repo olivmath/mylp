@@ -1,0 +1,46 @@
+[    6034ms] [WARNING] [2026-03-20T04:33:57.227Z]  @firebase/app: Firebase: Firebase App named 'firestore component::0.7987144512302181' already deleted (app/app-deleted). @ http://localhost:4000/assets/index-ClZTY_JS.js:1494
+[    6036ms] [WARNING] [2026-03-20T04:33:57.229Z]  @firebase/app: Firebase: Firebase App named 'firestore component::0.7987144512302181' already deleted (app/app-deleted). @ http://localhost:4000/assets/index-ClZTY_JS.js:1494
+[    6036ms] [WARNING] [2026-03-20T04:33:57.229Z]  @firebase/app: Firebase: Firebase App named 'firestore component::0.7987144512302181' already deleted (app/app-deleted). @ http://localhost:4000/assets/index-ClZTY_JS.js:1494
+[  171167ms] [ERROR] Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING @ http://127.0.0.1:8080/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fdev-agro-credit%2Fdatabases%2F(default)&RID=rpc&SID=yZksiHbq-RGiEQmjm9JKBg%3D%3D&AID=35&CI=0&TYPE=xmlhttp&zx=cpfi17mnvos3&t=1:0
+[  171172ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:8080/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fdev-agro-credit%2Fdatabases%2F(default)&RID=rpc&SID=yZksiHbq-RGiEQmjm9JKBg%3D%3D&AID=40&CI=0&TYPE=xmlhttp&zx=uqa1xp4cgur2&t=1:0
+[  171431ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  171704ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:9150/requests' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/assets/index-ClZTY_JS.js:5922
+[  172702ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:9150/requests' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/assets/index-ClZTY_JS.js:5922
+[  173438ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  173444ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  173445ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/assets/img/database.png:0
+[  173573ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/assets/img/database.png:0
+[  175449ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  175452ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  177460ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  177462ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  179468ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  179471ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  181475ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  181478ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  183482ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  183484ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  185489ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  185490ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  187499ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  187507ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  189518ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  189524ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  191534ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  191537ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  193541ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  193542ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  195548ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  195550ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  197557ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  197559ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  199564ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  199566ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  201571ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  201573ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  203578ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  203580ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  205585ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  205589ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  207596ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0
+[  207599ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4000/api/config:0

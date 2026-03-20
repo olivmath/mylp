@@ -1,0 +1,10 @@
+[     300ms] [WARNING] Image with src "/blockchainrio.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[     304ms] [WARNING] Image with src "/mentor-meridian.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[     304ms] [WARNING] Image with src "/meridian-friends.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[     304ms] [WARNING] Image with src "/posgrad.jpg" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[    4996ms] [WARNING] Image with src "/mentor-meridian.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287

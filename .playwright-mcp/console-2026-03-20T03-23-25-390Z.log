@@ -1,0 +1,6 @@
+[    4926ms] [ERROR] Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'https://www.patreon.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.patreon.com/:0
+[    4926ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://cloudflareinsights.com/cdn-cgi/rum:0
+[    6631ms] [WARNING] GSAP target null not found. https://greensock.com @ https://www.patreon.com/_marketing_assets/_next/static/chunks/pages/_app-de94f8c4dfdf6116.js:39
+[    6634ms] [WARNING] GSAP target  not found. https://greensock.com @ https://www.patreon.com/_marketing_assets/_next/static/chunks/pages/_app-de94f8c4dfdf6116.js:39
+[   12629ms] [WARNING] GSAP target null not found. https://greensock.com @ https://www.patreon.com/_marketing_assets/_next/static/chunks/pages/_app-de94f8c4dfdf6116.js:39
+[   12631ms] [WARNING] GSAP target  not found. https://greensock.com @ https://www.patreon.com/_marketing_assets/_next/static/chunks/pages/_app-de94f8c4dfdf6116.js:39

@@ -1,0 +1,40 @@
+[  777681ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[ 1528259ms] [WARNING] [HMR] Invalid message: {"isTrusted":true}
+TypeError: Cannot convert undefined or null to object
+    at Object.keys (<anonymous>)
+    at extractModulesFromTurbopackMessage (http://localhost:3000/_next/static/chunks/22f75_next_dist_client_bbed98ee._.js:10440:39)
+    at TurbopackHmr.onTurbopackMessage (http://localhost:3000/_next/static/chunks/22f75_next_dist_client_bbed98ee._.js:10387:32)
+    at processMessage (http://localhost:3000/_next/static/chunks/22f75_next_dist_client_bbed98ee._.js:10816:30)
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/22f75_next_dist_client_bbed98ee._.js:10152:52) @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[ 1553147ms] [ERROR] ./src/app/brutalist/page.tsx:1:1
+Module not found: Can't resolve './client'
+> 1 | import { BrutalistClient } from "./client";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const metadata = {
+  4 |   title: "Lucas Oliveira - Brutalist Portfolio",
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:3117
+[ 1559558ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[ 1563990ms] ReferenceError: metrics is not defined
+    at Hero (http://localhost:3000/_next/static/chunks/src_ddba9f13._.js?id=%255Bproject%255D%252Fsrc%252Fcomponents%252Fbrutalist%252FHero.tsx+%255Bapp-client%255D+%2528ecmascript%2529:192:31)
+    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:14816:24)
+    at renderWithHooks (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:4645:24)
+    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:6106:21)
+    at beginWork (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:6702:24)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:959:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:9556:97)
+    at workLoopSync (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:9450:40)
+    at renderRootSync (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:9434:13)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:9099:47)
+    at performSyncWorkOnRoot (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:10232:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:10148:316)
+    at flushSyncWork$1 (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:9231:86)
+    at Object.scheduleRefresh (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_react-dom_8e89b8c0._.js:294:13)
+    at http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_f4177d39._.js:391:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_f4177d39._.js:384:38)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_f4177d39._.js:878:31)
+    at http://localhost:3000/_next/static/chunks/22f75_next_dist_compiled_f4177d39._.js:886:13
+[ 1568656ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
+[ 1569803ms] [WARNING] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. @ http://localhost:3000/_next/static/chunks/22f75_next_dist_0b77580d._.js:2287
