@@ -4,9 +4,7 @@ import Image from "next/image";
 import { useRef, useMemo } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTranslations } from "@/lib/i18n";
-import { theme } from "@/lib/design-system";
-
-const SIDE_PAD = "px-6 md:px-12 lg:px-16";
+import { theme, layout } from "@/lib/design-system";
 
 export function Hero() {
   const { t } = useTranslations();
@@ -59,7 +57,7 @@ export function Hero() {
           src="/lucas-4.png"
           alt="Lucas Bispo de Oliveira"
           fill
-          className="object-contain opacity-100"
+          className="object-contain"
           priority
           quality={100}
           unoptimized
@@ -71,7 +69,7 @@ export function Hero() {
       </div>
 
       {/* Name — overlaps photo on mobile */}
-      <div className={`flex-1 flex items-end relative z-10 ${SIDE_PAD} pb-6 md:pb-10 pt-[45vh] md:pt-32`}>
+      <div className={`flex-1 flex items-end relative z-10 ${layout.sidePad} pb-6 md:pb-10 pt-[45vh] md:pt-32`}>
         <h1 className="text-[13vw] sm:text-[11vw] md:text-[9vw] font-black leading-[0.88] tracking-tight uppercase select-none">
           <span style={{ color: theme.accentText }}>Lucas</span>
           <br />
@@ -82,7 +80,7 @@ export function Hero() {
       </div>
 
       {/* Headline */}
-      <div className={`relative z-10 ${SIDE_PAD} py-4 md:py-6`}>
+      <div className={`relative z-10 ${layout.sidePad} py-4 md:py-6`}>
         <p className="text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-neutral-400">
           {t.hero.headline}
         </p>
@@ -91,7 +89,7 @@ export function Hero() {
       {/* Metrics */}
       <motion.div
         ref={metricsRef}
-        className={`relative z-10 w-full border-t border-neutral-800 ${SIDE_PAD}`}
+        className={`relative z-10 w-full border-t border-neutral-800 ${layout.sidePad}`}
         style={{ backgroundColor: "var(--background)" }}
         initial={{ opacity: 0, y: 20 }}
         animate={metricsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}

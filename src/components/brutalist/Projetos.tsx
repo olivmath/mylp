@@ -5,19 +5,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "@/data/content";
 import { useTranslations } from "@/lib/i18n";
 import { SectionLabel } from "@/components/brutalist/SectionLabel";
-import { theme } from "@/lib/design-system";
+import { theme, layout } from "@/lib/design-system";
 
 function ProjectCard({
   project,
   index,
-  total,
   isOpen,
   onToggle,
   viewProjectLabel,
 }: {
   project: (typeof projects)[number];
   index: number;
-  total: number;
   isOpen: boolean;
   onToggle: () => void;
   viewProjectLabel: string;
@@ -28,7 +26,7 @@ function ProjectCard({
       onClick={onToggle}
     >
       {/* Collapsed header - always visible */}
-      <div className="flex items-center justify-between px-6 md:px-12 lg:px-16 py-4 md:py-6 hover:opacity-80 transition-all duration-150">
+      <div className={`flex items-center justify-between ${layout.sidePad} py-4 md:py-6 hover:opacity-80 transition-all duration-150`}>
         <div className="flex items-center gap-4 md:gap-8">
           <span className="text-[10px] uppercase tracking-[0.4em] text-neutral-600 w-12">
             {String(index + 1).padStart(2, "0")}
@@ -56,7 +54,7 @@ function ProjectCard({
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="px-6 md:px-12 lg:px-16 pb-6 md:pb-10 pl-16 md:pl-24 lg:pl-32">
+            <div className={`${layout.sidePad} pb-6 md:pb-10 pl-16 md:pl-24 lg:pl-32`}>
               <p className="text-neutral-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-6">
                 {project.description}
               </p>
@@ -103,7 +101,6 @@ export function Projetos() {
           key={project.id}
           project={project}
           index={i}
-          total={projects.length}
           isOpen={openIndex === i}
           onToggle={() => setOpenIndex(openIndex === i ? null : i)}
           viewProjectLabel={t.projetos.viewProject}

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { testimonials } from "@/data/content";
 import { useTranslations } from "@/lib/i18n";
 import { SectionLabel } from "@/components/brutalist/SectionLabel";
-import { theme, colors } from "@/lib/design-system";
+import { theme, colors, layout } from "@/lib/design-system";
 
 function renderHighlightedQuote(text: string) {
   // Parse **bold highlight** and *italic* markers
@@ -86,7 +86,7 @@ export function Testemunhos() {
                 src={person.image ?? "/lucas-3.png"}
                 alt={person.name}
                 fill
-                className={`object-cover ${person.image ? "opacity-80" : "opacity-40"} grayscale contrast-110`}
+                className={`object-cover ${person.image ? "opacity-80" : "opacity-40"} grayscale contrast-125`}
                 sizes="(max-width: 768px) 100vw, 40vw"
               />
             </motion.div>
@@ -96,7 +96,7 @@ export function Testemunhos() {
         </div>
 
         {/* Quote side */}
-        <div className="relative w-full md:w-3/5 flex flex-col justify-between px-4 md:px-12 lg:px-16 py-10 md:py-16">
+        <div className={`relative w-full md:w-3/5 flex flex-col justify-between ${layout.sidePad} py-10 md:py-16`}>
           <AnimatePresence mode="wait">
             <motion.blockquote
               key={`quote-${current}`}

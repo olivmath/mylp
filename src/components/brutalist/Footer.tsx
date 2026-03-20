@@ -16,7 +16,7 @@ export function Footer() {
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="flex items-center justify-center px-4 md:px-8 py-8">
+      <div className="flex items-center justify-center px-6 md:px-12 lg:px-16 py-8">
         <span className="text-xs uppercase tracking-[0.3em] text-neutral-400">
           olivmath &copy; 2020
         </span>

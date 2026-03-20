@@ -1,6 +1,10 @@
 // Design System - Single source of truth for all visual tokens
 // Change values here to update the entire site
 
+export const layout = {
+  sidePad: "px-6 md:px-12 lg:px-16",
+} as const;
+
 export const colors = {
   // Primary palette
   primary: "#1E3AD9",

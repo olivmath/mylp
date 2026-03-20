@@ -3,10 +3,9 @@
 import {
   createContext,
   useContext,
-  useState,
-  useEffect,
   useCallback,
   useMemo,
+  useSyncExternalStore,
   type ReactNode,
 } from "react";
 import {
@@ -28,27 +27,50 @@ interface LocaleContextValue {
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
-export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
+// External store for locale (same pattern as theme.tsx)
+let currentLocale: Locale = DEFAULT_LOCALE;
+const listeners = new Set<() => void>();
 
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
-      if (stored && SUPPORTED_LOCALES.includes(stored)) {
-        setLocaleState(stored);
-      }
-    } catch {
-      // localStorage unavailable
+function getSnapshot(): Locale {
+  return currentLocale;
+}
+
+function getServerSnapshot(): Locale {
+  return DEFAULT_LOCALE;
+}
+
+function subscribe(callback: () => void) {
+  listeners.add(callback);
+  return () => listeners.delete(callback);
+}
+
+function setLocaleMode(locale: Locale) {
+  currentLocale = locale;
+  listeners.forEach((cb) => cb());
+}
+
+// Initialize from localStorage on first load (client only)
+if (typeof window !== "undefined") {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
+    if (stored && SUPPORTED_LOCALES.includes(stored)) {
+      currentLocale = stored;
     }
-  }, []);
+  } catch {
+    // localStorage unavailable
+  }
+}
+
+export function LocaleProvider({ children }: { children: ReactNode }) {
+  const locale = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const setLocale = useCallback((newLocale: Locale) => {
-    setLocaleState(newLocale);
     try {
       localStorage.setItem(STORAGE_KEY, newLocale);
     } catch {
       // localStorage unavailable
     }
+    setLocaleMode(newLocale);
   }, []);
 
   const value = useMemo(

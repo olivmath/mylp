@@ -46,8 +46,8 @@ export function Hackathons() {
                   <Image
                     src={hack.logo}
                     alt=""
-                    width={220}
-                    height={220}
+                    width={hack.logo.includes("chiliz") ? 170 : hack.logo.includes("stellar") ? 176 : 220}
+                    height={hack.logo.includes("chiliz") ? 170 : hack.logo.includes("stellar") ? 176 : 220}
                     className={`object-contain ${hack.logo.includes("chiliz") ? "rounded-full opacity-[0.15]" : "opacity-[0.08]"}`}
                     unoptimized={hack.logo.endsWith(".svg")}
                   />
@@ -61,7 +61,7 @@ export function Hackathons() {
 
                 <span
                   className="text-lg md:text-xl font-bold uppercase tracking-wide mt-3 block"
-                  style={{ color: theme.accent }}
+                  style={{ color: theme.accentText }}
                 >
                   {hack.position}
                 </span>
@@ -92,16 +92,6 @@ export function Hackathons() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes brutalist-scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </section>
   );
 }

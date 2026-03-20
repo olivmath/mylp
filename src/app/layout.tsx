@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth">
       <body className="antialiased" style={spaceGrotesk.style}>
         {children}
       </body>

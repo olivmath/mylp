@@ -3,7 +3,7 @@
 import { useTranslations, SUPPORTED_LOCALES, type Locale } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
 import { SocialIcons } from "@/components/brutalist/SocialIcons";
-import { theme } from "@/lib/design-system";
+import { theme, layout } from "@/lib/design-system";
 
 export function HeaderBar() {
   const { locale, setLocale } = useTranslations();
@@ -11,7 +11,7 @@ export function HeaderBar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--background)] border-b border-neutral-800 transition-colors duration-300">
-      <div className="flex items-center justify-between px-6 md:px-12 lg:px-16 py-3">
+      <div className={`flex items-center justify-between ${layout.sidePad} py-3`}>
         {/* Logo + Socials */}
         <div className="flex items-center gap-6">
           <a
