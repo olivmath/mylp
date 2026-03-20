@@ -6,18 +6,18 @@ import { Projetos } from "@/components/brutalist/Projetos";
 import { Hackathons } from "@/components/brutalist/Hackathons";
 import { Testemunhos } from "@/components/brutalist/Testemunhos";
 import { Footer } from "@/components/brutalist/Footer";
-import { FloatingMenu } from "@/components/brutalist/FloatingMenu";
+import { HeaderBar } from "@/components/brutalist/HeaderBar";
 
 export function BrutalistClient() {
   return (
     <LocaleProvider>
       <main className="bg-black font-display selection:bg-[#FF5722] selection:text-black scroll-smooth">
+        <HeaderBar />
         <Hero />
         <Projetos />
         <Hackathons />
         <Testemunhos />
         <Footer />
-        <FloatingMenu />
       </main>
     </LocaleProvider>
   );

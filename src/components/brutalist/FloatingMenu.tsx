@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { useTranslations, SUPPORTED_LOCALES, type Locale } from "@/lib/i18n";
+import { useTranslations } from "@/lib/i18n";
 
 export function FloatingMenu() {
   const [open, setOpen] = useState(false);
-  const { locale, setLocale, t } = useTranslations();
+  const { t } = useTranslations();
 
   const sections = [
     { label: t.menu.hero, href: "#hero", key: "1" },
@@ -38,32 +38,6 @@ export function FloatingMenu() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 font-display">
-      {/* Language switcher */}
-      <div
-        className="absolute flex gap-0"
-        style={{
-          bottom: open ? "80px" : "8px",
-          right: "8px",
-          opacity: open ? 1 : 0,
-          transition: "all 200ms ease 220ms",
-          pointerEvents: open ? "auto" : "none",
-        }}
-      >
-        {SUPPORTED_LOCALES.map((loc: Locale) => (
-          <button
-            key={loc}
-            onClick={() => setLocale(loc)}
-            className="w-10 h-10 text-[10px] font-bold uppercase tracking-wider border border-neutral-700 transition-colors duration-150 cursor-pointer"
-            style={{
-              backgroundColor: locale === loc ? "#FF5722" : "#000",
-              color: locale === loc ? "#000" : "#fff",
-            }}
-          >
-            {loc.toUpperCase()}
-          </button>
-        ))}
-      </div>
-
       {/* Radial menu items */}
       {sections.map((section, i) => {
         const total = sections.length;
