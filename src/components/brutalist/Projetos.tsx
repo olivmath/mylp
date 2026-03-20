@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "@/data/content";
 import { useTranslations } from "@/lib/i18n";
 import { SectionLabel } from "@/components/brutalist/SectionLabel";
+import { theme } from "@/lib/design-system";
 
 function ProjectCard({
   project,
@@ -23,11 +24,11 @@ function ProjectCard({
 }) {
   return (
     <div
-      className="border-b border-neutral-800 cursor-pointer group"
+      className="border-b border-neutral-300 cursor-pointer group"
       onClick={onToggle}
     >
       {/* Collapsed header - always visible */}
-      <div className="flex items-center justify-between px-4 md:px-8 lg:px-16 py-4 md:py-6 hover:bg-neutral-950 transition-colors duration-150">
+      <div className="flex items-center justify-between px-6 md:px-12 lg:px-16 py-4 md:py-6 hover:opacity-80 transition-all duration-150">
         <div className="flex items-center gap-4 md:gap-8">
           <span className="text-[10px] uppercase tracking-[0.4em] text-neutral-600 w-12">
             {String(index + 1).padStart(2, "0")}
@@ -55,8 +56,8 @@ function ProjectCard({
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="px-4 md:px-8 lg:px-16 pb-6 md:pb-10 pl-16 md:pl-24 lg:pl-32">
-              <p className="text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-6">
+            <div className="px-6 md:px-12 lg:px-16 pb-6 md:pb-10 pl-16 md:pl-24 lg:pl-32">
+              <p className="text-neutral-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-6">
                 {project.description}
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
@@ -64,7 +65,7 @@ function ProjectCard({
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-[10px] md:text-xs uppercase tracking-wider border border-neutral-700 px-2 md:px-3 py-1 text-neutral-400"
+                      className="text-[10px] md:text-xs uppercase tracking-wider border border-neutral-400 px-2 md:px-3 py-1 text-neutral-600"
                     >
                       {t}
                     </span>
@@ -75,7 +76,8 @@ function ProjectCard({
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="text-xs md:text-sm uppercase tracking-[0.3em] text-[#0000FF] hover:text-white transition-colors duration-150"
+                  className="text-xs md:text-sm uppercase tracking-[0.3em] hover:text-black transition-colors duration-150"
+                  style={{ color: theme.accentTextLight }}
                 >
                   {viewProjectLabel} &rarr;
                 </a>
@@ -93,7 +95,7 @@ export function Projetos() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="projetos" className="bg-black text-white">
+    <section id="projetos" className="bg-[#F2F2F2] text-[#0D0D0D] transition-colors duration-300">
       <SectionLabel label={t.projetos.sectionLabel} />
 
       {projects.map((project, i) => (

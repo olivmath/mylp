@@ -6,6 +6,29 @@ import { motion, AnimatePresence } from "framer-motion";
 import { testimonials } from "@/data/content";
 import { useTranslations } from "@/lib/i18n";
 import { SectionLabel } from "@/components/brutalist/SectionLabel";
+import { theme, colors } from "@/lib/design-system";
+
+function renderHighlightedQuote(text: string) {
+  // Parse **bold highlight** and *italic* markers
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <span key={i} style={{ color: theme.accentText }}>
+          {part.slice(2, -2)}
+        </span>
+      );
+    }
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return (
+        <em key={i} className="not-italic" style={{ color: colors.neutral400 }}>
+          {part.slice(1, -1)}
+        </em>
+      );
+    }
+    return part;
+  });
+}
 
 const RECOMMENDATIONS_URL =
   "https://www.linkedin.com/in/olivmath/details/recommendations/?detailScreenTabIndex=0";
@@ -42,7 +65,7 @@ export function Testemunhos() {
   return (
     <section
       id="testemunhos"
-      className="cursor-pointer overflow-hidden bg-black text-white"
+      className="cursor-pointer overflow-hidden bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300"
       onClick={advance}
     >
       <SectionLabel label={t.testemunhos.sectionLabel} />
@@ -60,7 +83,7 @@ export function Testemunhos() {
               transition={{ duration: 0.4 }}
             >
               <Image
-                src={person.image ?? "/lucas-portrait-1.png"}
+                src={person.image ?? "/lucas-3.png"}
                 alt={person.name}
                 fill
                 className={`object-cover ${person.image ? "opacity-80" : "opacity-40"} grayscale contrast-110`}
@@ -68,8 +91,8 @@ export function Testemunhos() {
               />
             </motion.div>
           </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent md:hidden" />
-          <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to right, transparent, #000)" }} />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-transparent to-transparent md:hidden" />
+          <div className="absolute inset-0 hidden md:block" style={{ background: "linear-gradient(to right, transparent, var(--background))" }} />
         </div>
 
         {/* Quote side */}
@@ -83,7 +106,7 @@ export function Testemunhos() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              &ldquo;{quote}&rdquo;
+              &ldquo;{renderHighlightedQuote(quote)}&rdquo;
             </motion.blockquote>
           </AnimatePresence>
 
@@ -98,7 +121,7 @@ export function Testemunhos() {
                   }}
                   className="w-8 h-1 transition-colors duration-300 cursor-pointer"
                   style={{
-                    backgroundColor: i === current ? "#0000FF" : "#404040",
+                    backgroundColor: i === current ? theme.accentText : colors.neutral700,
                   }}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />
@@ -117,7 +140,7 @@ export function Testemunhos() {
                   <p className="text-sm font-bold uppercase tracking-wider">
                     {person.name}
                   </p>
-                  <p className="text-[10px] uppercase tracking-[0.2em] mt-1 text-neutral-500">
+                  <p className="text-[10px] uppercase tracking-[0.2em] mt-1 text-neutral-400">
                     {person.role} / {person.company}
                   </p>
                 </motion.div>
@@ -128,8 +151,8 @@ export function Testemunhos() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="text-sm uppercase tracking-[0.2em] font-bold border border-[#0000FF] px-6 py-3 hover:bg-[#0000FF] hover:text-white transition-colors duration-200"
-                style={{ color: "#0000FF" }}
+                className="text-sm uppercase tracking-[0.2em] font-bold border px-6 py-3 hover:bg-[var(--accent)] hover:text-white transition-colors duration-200"
+                style={{ color: theme.accentText, borderColor: theme.accentText }}
               >
                 LinkedIn &rarr;
               </a>

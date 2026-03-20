@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #0D0D0D;
+  --foreground: #F2F2F2;
+  --accent: #1E3AD9;
+  --accent-dark: #263DBF;
+  --accent-light: #5F72D9;
 }
 
 body {

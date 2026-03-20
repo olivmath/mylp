@@ -122,7 +122,7 @@ export default function FontSamples() {
 
       {categories.map((cat) => (
         <div key={cat.title} className="mb-24">
-          <h2 className="text-lg text-[#0000FF] uppercase tracking-widest mb-12 border-b border-neutral-800 pb-4">
+          <h2 className="text-lg text-[var(--accent)] uppercase tracking-widest mb-12 border-b border-neutral-800 pb-4">
             {cat.title}
           </h2>
 
@@ -136,7 +136,7 @@ export default function FontSamples() {
 
                 <div style={font.style}>
                   <h3 className={`text-[12vw] leading-[0.85] tracking-tighter select-none ${cat.preserveCase ? "" : "uppercase"}`}>
-                    <span className="text-[#0000FF]">{cat.preserveCase ? "Lucas" : "Lucas"}</span>
+                    <span className="text-[var(--accent)]">{cat.preserveCase ? "Lucas" : "Lucas"}</span>
                     <br />
                     {cat.preserveCase ? "Bispo de" : "Bispo de"}
                     <br />
@@ -153,15 +153,15 @@ export default function FontSamples() {
                   </p>
                   <div className="flex gap-12 mt-4">
                     <div>
-                      <span className="text-5xl text-[#0000FF]">58.967</span>
+                      <span className="text-5xl text-[var(--accent)]">58.967</span>
                       <span className="text-sm text-neutral-500 block uppercase">downloads</span>
                     </div>
                     <div>
-                      <span className="text-5xl text-[#0000FF]">8000+</span>
+                      <span className="text-5xl text-[var(--accent)]">8000+</span>
                       <span className="text-sm text-neutral-500 block uppercase">alunos</span>
                     </div>
                     <div>
-                      <span className="text-5xl text-[#0000FF]">6+</span>
+                      <span className="text-5xl text-[var(--accent)]">6+</span>
                       <span className="text-sm text-neutral-500 block uppercase">anos</span>
                     </div>
                   </div>

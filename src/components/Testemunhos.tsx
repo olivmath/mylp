@@ -1,4 +1,62 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+
+const COLORS = [
+  "bg-blue-600",
+  "bg-purple-600",
+  "bg-emerald-600",
+  "bg-amber-600",
+  "bg-rose-600",
+  "bg-cyan-600",
+];
+
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+}
+
+function Avatar({
+  src,
+  name,
+  colorClass,
+}: {
+  src: string;
+  name: string;
+  colorClass: string;
+}) {
+  const [imgError, setImgError] = useState(false);
+
+  if (imgError) {
+    return (
+      <div
+        className={`w-14 h-14 rounded-full ${colorClass} flex items-center justify-center flex-shrink-0`}
+      >
+        <span className="text-white font-bold text-lg">
+          {getInitials(name)}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-gray-200">
+      <Image
+        src={src}
+        alt={name}
+        width={56}
+        height={56}
+        className="w-full h-full object-cover"
+        onError={() => setImgError(true)}
+      />
+    </div>
+  );
+}
 
 const Testemunhos = () => {
   const testimonials = [
@@ -6,70 +64,57 @@ const Testemunhos = () => {
       name: "André Novaes",
       role: "Produtor de Conteúdo & Branding",
       company: "NearX",
+      linkedin: "https://www.linkedin.com/in/andhnovaes/",
       content:
-        "Trabalhar ao lado do Lucas é transformador. Ele estruturou programas de Blockchain e Web3 que se tornaram referência na América Latina. Lucas combina rigor técnico com empatia pedagógica, e sua capacidade de conectar ecossistemas e talentos torna cada projeto uma experiência de aprendizagem.",
-      avatar: "👨‍💼",
-      rating: 5,
+        "Trabalhar ao lado do Lucas Oliveira é uma experiência transformadora para qualquer profissional que atue em tecnologia e educação. Lucas une visão estratégica, domínio técnico e propósito educacional, exatamente o tipo de profissional capaz de mover toda uma comunidade. Na NearX, ele estruturou e liderou programas educacionais de Blockchain e Web3 que se tornaram referência na América Latina, impactando milhares de desenvolvedores e educadores. A clareza com que ele traduz temas complexos em metodologias práticas é algo raro, e sua capacidade de conectar ecossistemas, empresas e talentos torna cada projeto uma verdadeira experiência de aprendizagem. Lucas combina rigor técnico com empatia pedagógica, e é evidente o quanto ele acredita que ensinar é o caminho mais poderoso para transformar o mercado. Recomendo o Lucas não apenas como Head de Educação em Blockchain, mas como um mentor e inovador que eleva o padrão de tudo o que toca.",
+      avatar: "/avatars/andre-novaes.jpg",
     },
     {
       name: "Suely Brusko",
-      role: "Tech Career Mentor",
+      role: "Tech Career & Life Mentor",
       company: "NearX",
+      linkedin: "https://www.linkedin.com/in/suelybrusko/",
       content:
-        "Lucas é um dos profissionais mais inspiradores com quem já trabalhei. Como Head of Education, ele não só lidera a transformação de devs Web2 em mestres de Blockchain, mas criou o Postgraduate Program em Blockchain. Ele tem capacidade única de traduzir conceitos complexos em aprendizados práticos.",
-      avatar: "👩‍💼",
-      rating: 5,
+        "Conhecer e trabalhar com Lucas Oliveira foi um divisor de águas para mim, e não exagero ao dizer que ele é um dos profissionais mais inspiradores com quem já cruzei. Como Head of Education na Nearx, Lucas não só lidera a transformação de devs Web2 em mestres de Blockchain e Web3 Security, mas também me mostrou, na prática, o poder de uma educação tech bem executada. Tive a sorte de testemunhar de perto sua genialidade ao criar o Postgraduate Program em Blockchain da Nearx. Ele tem uma capacidade única de traduzir conceitos complexos em aprendizados práticos, sempre com um brilho no olho que contagia qualquer equipe ou aluno. Ele é mais que um líder: é um visionário que deixa marca por onde passa. Recomendo Lucas com todo entusiasmo a quem quer elevar o nível em educação tech!",
+      avatar: "/avatars/suely-brusko.jpg",
     },
     {
       name: "Luis Malheiro",
       role: "Senior Software Engineer",
-      company: "Azion",
+      company: "",
+      linkedin: "https://www.linkedin.com/in/luis-malheiro/",
       content:
-        "Lucas is a remarkable professional with genuine passion for learning. His enthusiasm for work is infectious, and he is constantly seeking new knowledge to enhance his abilities. It's inspiring to see his dedication to self-improvement and technical excellence.",
-      avatar: "👨‍💻",
-      rating: 5,
+        "I had the pleasure of working alongside Lucas Bispo and I can confidently say that he is a remarkable professional. Lucas is a young and vibrant individual whose enthusiasm for his work is truly infectious. He has a genuine passion for learning and is constantly seeking out new knowledge and skills to enhance his abilities. It is rare to encounter someone as eager to learn and grow as Lucas, and it is truly inspiring to see his dedication to self-improvement.",
+      avatar: "/avatars/luis-malheiro.jpg",
     },
     {
       name: "Ronilton Nunes",
-      role: "Blockchain Engineer",
+      role: "Software Engineer | Blockchain & Web3",
       company: "Lunes Platform",
+      linkedin: "https://www.linkedin.com/in/nunesinc/",
       content:
-        "Exceptional Lead Blockchain with invaluable expertise in Blockchain technology. Your contributions to Lunes SDK, Blockchain Documentation, and Rust programming were outstanding. Your leadership qualities were instrumental in ensuring the project's success.",
-      avatar: "⚡",
-      rating: 5,
+        "I am writing to recommend you as an exceptional Lead Blockchain with whom I had the pleasure of working on the Lunes Platform. Your expertise in Blockchain technology, attention to detail, analytical skills, and problem-solving abilities were invaluable to the team. Your contributions to the Lunes SDK, Blockchain Documentation, and Rust programming were outstanding, and your leadership qualities were instrumental in ensuring the project's success. I wholeheartedly recommend you for any future projects that require Blockchain expertise, leadership skills, and a strong work ethic. You are a valuable asset to any team.",
+      avatar: "/avatars/ronilton-nunes.jpg",
     },
     {
       name: "Isaque Coelho",
       role: "AI Engineer",
       company: "Lunes",
+      linkedin: "https://www.linkedin.com/in/coelhoxyz/",
       content:
-        "Lucas is an excellent leader and mentor who helped me follow in the programming world with perfect advice. His technical part is impeccable, as well as his leadership. In any company where I am, the first name to be recommended will always be his.",
-      avatar: "🤖",
-      rating: 5,
+        "I worked with Lucas for almost 1 year, he is an excellent leader, he is a mentor to me and helped me to follow in this programming world, always with perfect advice, his technical part is impeccable, as well as his leadership. In any company where I am, the first name to be recommended will always be his, I dedicate my best to solving problems and doing them with excellence!",
+      avatar: "/avatars/isaque-coelho.jpg",
     },
     {
       name: "André Viotto",
       role: "Senior Backend Engineer",
-      company: "Lunes",
+      company: "",
+      linkedin: "https://www.linkedin.com/in/viottto/",
       content:
-        "Lucas possui extrema capacidade técnica, excelente didática e criatividade fora do comum. Destaco sua proatividade, assertividade, empatia e excelente capacidade de comunicação.",
-      avatar: "💻",
-      rating: 5,
+        "O Lucas possui extrema capacidade técnica, uma excelente didática e criatividade fora de comum. Destaco sua proatividade, assertividade, empatia e excelente capacidade de comunicação.",
+      avatar: "/avatars/andre-viotto.jpg",
     },
   ];
-
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, index) => (
-      <span
-        key={index}
-        className={`text-xl ${
-          index < rating ? "text-yellow-400" : "text-gray-300"
-        }`}
-      >
-        ⭐
-      </span>
-    ));
-  };
 
   return (
     <section id="testemunhos" className="py-20 bg-gray-50">
@@ -91,22 +136,31 @@ const Testemunhos = () => {
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-8"
             >
               <div className="flex items-center mb-6">
-                <div className="text-4xl mr-4">{testimonial.avatar}</div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                <Avatar
+                  src={testimonial.avatar}
+                  name={testimonial.name}
+                  colorClass={COLORS[index % COLORS.length]}
+                />
+                <div className="ml-4">
+                  <a
+                    href={testimonial.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+                  >
                     {testimonial.name}
-                  </h3>
+                  </a>
                   <p className="text-gray-600">{testimonial.role}</p>
-                  <p className="text-sm text-blue-600 font-semibold">
-                    {testimonial.company}
-                  </p>
+                  {testimonial.company && (
+                    <p className="text-sm text-blue-600 font-semibold">
+                      {testimonial.company}
+                    </p>
+                  )}
                 </div>
               </div>
 
-              <div className="flex mb-4">{renderStars(testimonial.rating)}</div>
-
               <blockquote className="text-gray-700 leading-relaxed italic">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </blockquote>
             </div>
           ))}

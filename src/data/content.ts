@@ -11,9 +11,10 @@ export const profile = {
   whatsappLink: "https://wa.me/5548999013089",
   cvPath: "/Lucas Oliveira - cv.pdf",
   social: {
-    github: "https://github.com/olivmath",
     linkedin: "https://linkedin.com/in/olivmath",
+    github: "https://github.com/olivmath",
     twitter: "https://twitter.com/olivmath_",
+    blog: "/blog",
   },
   metrics: [
     { value: "6+", label: "Years Experience" },
@@ -97,6 +98,7 @@ export const hackathons = [
     location: "Argentina",
     tech: ["Stellar", "Soroban", "Rust"],
     featured: true,
+    logo: "/logo-stellar.png",
   },
   {
     name: "XRPL Hackathon",
@@ -104,6 +106,7 @@ export const hackathons = [
     position: "2nd Place",
     location: "Brazil",
     tech: ["XRPL", "Solidity", "TypeScript"],
+    logo: "/logo-xrpl.jpg",
   },
   {
     name: "Rayls Hackathon",
@@ -111,13 +114,15 @@ export const hackathons = [
     position: "5th Place",
     location: "Argentina",
     tech: ["Rayls", "Blockchain"],
+    logo: "/logo-rayls.svg",
   },
   {
-    name: "ZKgames",
+    name: "Stellar ZKGame",
     year: "2026",
     position: "Honorable Mention",
     location: "Global",
     tech: ["Stellar", "ZKP", "Gaming"],
+    logo: "/logo-stellar.png",
   },
   {
     name: "Chiliz Hackathon",
@@ -125,6 +130,7 @@ export const hackathons = [
     position: "2nd Place",
     location: "Global",
     tech: ["Chiliz", "Solidity", "GameFi"],
+    logo: "/logo-chiliz-pepper.png",
   },
   {
     name: "NASA Space Apps",
@@ -132,6 +138,7 @@ export const hackathons = [
     position: "2nd Place",
     location: "Florianópolis",
     tech: ["Rust", "NASA APIs", "Blockchain"],
+    logo: "/logo-nasa-dark.jpg",
   },
 ];
 
