@@ -4,7 +4,7 @@ export const profile = {
   headline: "Senior Blockchain Engineer & Cryptography Specialist",
   subheadline:
     "Principal Engineer at DREX | Stellar Ambassador | NASA 1st Place",
-  bio: "6+ years architecting, building, and securing blockchain systems. Principal Engineer at DREX (Brazil's CBDC), Head of Education at NearX, and 4x Web3 hackathon winner. Creator of Merkly (55k+ downloads) and Stellar Ambassador.",
+  bio: "6+ years architecting, building, and securing blockchain systems. Principal Engineer at DREX (Brazil's CBDC), Head of Education at NearX, and 4x Web3 hackathon winner. Creator of Merkly (105k+ downloads) and Stellar Ambassador.",
   location: "Florianópolis, SC, Brasil",
   email: "lucas@protonmail.com",
   whatsapp: "+55 (48) 99901-3089",
@@ -18,8 +18,8 @@ export const profile = {
   },
   metrics: [
     { value: "6+", label: "Years Experience" },
-    { value: "55k+", label: "Downloads" },
-    { value: "8000+", label: "Students" },
+    { value: "105k+", label: "Downloads" },
+    { value: "≈100", label: "Students" },
   ],
   companies: [
     "DREX - Banco Central do Brasil",
@@ -40,53 +40,70 @@ export const profile = {
 export const projects = [
   {
     id: "drex",
-    title: "Brazil CBDC - DREX",
-    description:
-      "Principal Blockchain Engineer no projeto CBDC do Banco Central do Brasil. Arquitetura de smart contracts e privacy infrastructure com ZKP",
-    tech: ["Solidity", "ZKP", "CBDC", "Hyperledger Besu"],
+    title: "Brazil CBDC — DREX",
+    tech: ["Solidity", "ZKP", "CBDC", "Hyperledger Besu", "DvP"],
     link: "https://www.bcb.gov.br/estabilidadefinanceira/drex",
-    featured: true,
+    images: ["/blockchainrio.jpg"],
+    links: [
+      { label: "DREX — Banco Central", href: "https://www.bcb.gov.br/estabilidadefinanceira/drex" },
+      { label: "Visa VTAP", href: "https://developer.visa.com/capabilities/visa-tokenized-asset-platform" },
+    ],
+    milestones: [
+      { name: "VISA / XP", link: "https://www.bcb.gov.br/estabilidadefinanceira/drex" },
+      { name: "Tecban / Clearsale", link: "https://clearsale.com.br" },
+    ],
   },
   {
-    id: "merkly",
-    title: "Merkly",
-    description:
-      "Biblioteca Python mais usada para Merkle Trees em blockchain, com 79 stars e 58.967 downloads no PyPI",
-    tech: ["Python", "Cryptography", "Merkle Trees"],
+    id: "crypto-libs",
+    title: "Cryptography Libs",
+    tech: ["Python", "Rust", "Cryptography", "Merkle Trees", "Ed25519"],
     link: "https://github.com/olivmath/merkly",
-    featured: true,
+    images: ["/meridian-friends.jpg"],
+    links: [
+      { label: "Merkly — PyPI", href: "https://pypi.org/project/merkly/" },
+      { label: "Keccaky — PyPI", href: "https://pypi.org/project/keccaky/" },
+      { label: "merkletreers — crates.io", href: "https://crates.io/crates/merkletreers" },
+      { label: "BrBitcoin — GitHub", href: "https://github.com/olivmath/brbitcoin" },
+    ],
+    milestones: [
+      { name: "Merkly", link: "https://github.com/olivmath/merkly" },
+      { name: "Keccaky", link: "https://github.com/olivmath/keccaky" },
+      { name: "ed25519-axolotl", link: "https://github.com/lunes-platform/ed25519-axolotl" },
+      { name: "BrBitcoin", link: "https://github.com/olivmath/brbitcoin" },
+    ],
   },
   {
-    id: "lunes",
-    title: "Lunes L1 Protocol",
-    description:
-      "Tech Lead Blockchain desenvolvendo protocolo L1 token-centric. Redução de 83% no tempo de sync e gestão de validadores",
-    tech: ["Scala", "Rust", "L1 Protocol", "LevelDB"],
-    link: "https://lunes.io",
-  },
-  {
-    id: "stellar",
-    title: "Stellar Network",
-    description:
-      "Official Brazil Ambassador contribuindo com protocolo Stellar, smart contracts Soroban e educação para desenvolvedores",
-    tech: ["Stellar", "Soroban", "Rust"],
-    link: "https://stellar.org",
-  },
-  {
-    id: "postgrad",
-    title: "PostGraduation Program",
-    description:
-      "Criação e liderança do programa de pós-graduação em Blockchain na NearX, formando 8000+ alunos na América Latina",
-    tech: ["Education", "Blockchain", "Web3", "Curriculum Design"],
-    link: "https://nearx.com.br",
-  },
-  {
-    id: "30day30blockchain",
-    title: "30day/30blockchain",
-    description:
-      "Desafio de 30 dias construindo 30 projetos blockchain diferentes, explorando múltiplas chains e protocolos",
-    tech: ["Rust", "Solidity", "TypeScript", "Multi-chain"],
+    id: "blockchain-eng",
+    title: "Blockchain Engineering",
+    tech: ["Stellar", "Soroban", "Rust", "Scala", "Solidity", "DeFi"],
     link: "https://github.com/olivmath",
+    images: ["/mentor-meridian.jpg", "/meridian-friends.jpg"],
+    links: [
+      { label: "Stellar Foundation", href: "https://stellar.org" },
+      { label: "Lunes Protocol", href: "https://lunes.io" },
+    ],
+    milestones: [
+      { name: "Stellar", link: "https://stellar.org" },
+      { name: "Lunes", link: "https://lunes.io" },
+      { name: "OnePercent", link: "https://github.com/olivmath" },
+      { name: "Extracto DAO", link: "https://github.com/olivmath" },
+    ],
+  },
+  {
+    id: "education",
+    title: "Education / DevRel",
+    tech: ["Education", "Web3", "Content", "Community"],
+    link: "https://nearx.com.br",
+    images: ["/posgrad.jpg"],
+    links: [
+      { label: "NearX", href: "https://nearx.com.br" },
+      { label: "YouTube", href: "https://youtube.com/@olivmath" },
+    ],
+    milestones: [
+      { name: "FloripaWeb3", link: "https://github.com/olivmath" },
+      { name: "YouTube", link: "https://youtube.com/@olivmath" },
+      { name: "NearX", link: "https://nearx.com.br" },
+    ],
   },
 ];
 

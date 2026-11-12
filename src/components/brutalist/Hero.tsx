@@ -14,7 +14,7 @@ export function Hero() {
 
   const metrics = useMemo(() => [
     {
-      value: "59K+",
+      value: "166K+",
       label: t.hero.metricDownloads,
       link: "https://pepy.tech/projects/merkly",
       icon: (
@@ -24,7 +24,7 @@ export function Hero() {
       ),
     },
     {
-      value: "8K+",
+      value: "≈100",
       label: t.hero.metricStudents,
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

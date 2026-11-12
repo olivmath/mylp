@@ -1,6 +1,6 @@
 import { profile } from "@/data/content";
 
-const socials = [
+const socials: { label: string; href: string; path?: string; text?: boolean; download?: boolean }[] = [
   {
     label: "LinkedIn",
     href: profile.social.linkedin,
@@ -21,6 +21,12 @@ const socials = [
     href: profile.social.blog,
     text: true,
   },
+  {
+    label: "Resume",
+    href: "/lucas-oliveira-cv.pdf",
+    text: true,
+    download: true,
+  },
 ];
 
 export function SocialIcons({ size = "w-4 h-4" }: { size?: string }) {
@@ -30,12 +36,18 @@ export function SocialIcons({ size = "w-4 h-4" }: { size?: string }) {
         <a
           key={s.label}
           href={s.href}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(s.download ? { download: true } : { target: "_blank", rel: "noopener noreferrer" })}
           aria-label={s.label}
           className="text-neutral-400 hover:text-[var(--accent)] transition-colors"
         >
-          {s.text ? (
+          {s.download ? (
+            <span className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider px-5 py-1.5 bg-[var(--accent)] text-white">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="square">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" />
+              </svg>
+              {s.label}
+            </span>
+          ) : s.text ? (
             <span className="text-xs font-bold uppercase tracking-wider border border-neutral-400 px-2 py-0.5">{s.label}</span>
           ) : (
             <svg viewBox="0 0 24 24" fill="currentColor" className={size}>

@@ -4,14 +4,35 @@ export const translations = {
   pt: {
     hero: {
       headline:
-        "Matemático\u00A0\u00A0|\u00A0\u00A0Engenheiro de Criptografia\u00A0\u00A0|\u00A0\u00A0Embaixador Oficial Stellar Brasil",
-      metricDownloads: "downloads em bibliotecas de criptografia",
+        "Matemático\u00A0\u00A0|\u00A0\u00A0Engenheiro de Criptografia\u00A0\u00A0|\u00A0\u00A0Senior Blockchain Engineer",
+      metricDownloads: "downloads em 16 bibliotecas open-source",
       metricStudents: "alunos",
       metricExperience: "anos de experiência em blockchain",
     },
     projetos: {
       sectionLabel: "02 / Projetos",
       viewProject: "Ver Projeto",
+      descriptions: {
+        drex: "Principal Blockchain Engineer no piloto CBDC do Banco Central do Brasil. Infraestrutura de privacidade com ZKP, tokenização de câmbio com DvP e integração Visa VTAP",
+        "crypto-libs": "Bibliotecas open-source de criptografia com 166k+ downloads agregados entre PyPI, crates.io e npm",
+        "blockchain-eng": "6+ anos construindo infraestrutura blockchain — de protocolos L1 a plataformas DeFi e smart contracts",
+        education: "Educação e developer relations em blockchain, do conteúdo à formação acadêmica",
+      },
+      milestoneDescriptions: {
+        "drex.VISA / XP": "Integração Visa VTAP com DREX para interoperabilidade cross-chain de ativos tokenizados (RWA). Tokenização de câmbio com settlement atômico DvP",
+        "drex.Tecban / Clearsale": "Infraestrutura de privacidade com ZKP (Parfim/Anonymous Zether). DID descentralizado com Hyperledger Indy para a maior empresa anti-fraude do Brasil",
+        "crypto-libs.Merkly": "Biblioteca Python mais usada para Merkle Trees em blockchain — 72k+ downloads no PyPI, 82 stars no GitHub. Suporte a keccak-256 e hashes customizados",
+        "crypto-libs.Keccaky": "Implementação Python otimizada do hash Keccak-256 para aplicações blockchain — 15k+ downloads no PyPI",
+        "crypto-libs.ed25519-axolotl": "Assinaturas Ed25519 com chaves X25519, estilo Axolotl — 35k+ downloads combinados entre PyPI e crates.io",
+        "crypto-libs.BrBitcoin": "SDK Bitcoin multi-linguagem (Python, TypeScript, Rust). Design em camadas com API simples e acesso low-level, com zeroização de chaves",
+        "blockchain-eng.Stellar": "Embaixador oficial Stellar Brasil. Smart contracts Soroban, hackathons e contribuições ao protocolo",
+        "blockchain-eng.Lunes": "Tech Lead Blockchain no protocolo L1. SDK em JS, Python e Rust. Reduziu tempo de sync em 83% e liderou CI/CD com GitLab",
+        "blockchain-eng.OnePercent": "Senior Blockchain Engineer — plataforma de tokenização de dívidas agro (CAPEX). Backend TypeScript, segurança e integrações BaaS com clientes CNH e Corteva",
+        "blockchain-eng.Extracto DAO": "Liderou squad de 4 engenheiros. Smart contracts para mercado de commodities descentralizado, indexer GraphQL e 30% de ganho em performance",
+        "education.FloripaWeb3": "Fundador da comunidade Web3 de Florianópolis — eventos presenciais, networking e onboarding de devs",
+        "education.YouTube": "Canal de 0 a 20k inscritos. Desafio 30dias/30blockchains construindo um projeto blockchain diferente por dia. Bootcamps de Rust, Stellar, Optimism, StarkNet e Solidity/ENS",
+        "education.NearX": "Head of Education. Criou o primeiro programa de pós-graduação em Blockchain do Brasil, 10+ hackathons, mentoreou 100+ devs Web2→Web3",
+      },
     },
     hackathons: {
       sectionLabel: "03 / Hackathons",
@@ -41,14 +62,35 @@ export const translations = {
   en: {
     hero: {
       headline:
-        "Mathematician\u00A0\u00A0|\u00A0\u00A0Cryptography Engineer\u00A0\u00A0|\u00A0\u00A0Official Stellar Ambassador Brazil",
-      metricDownloads: "downloads cryptography libs",
+        "Mathematician\u00A0\u00A0|\u00A0\u00A0Cryptography Engineer\u00A0\u00A0|\u00A0\u00A0Senior Blockchain Engineer",
+      metricDownloads: "downloads across 16 open-source libs",
       metricStudents: "students",
       metricExperience: "years blockchain experience",
     },
     projetos: {
       sectionLabel: "02 / Projects",
       viewProject: "View Project",
+      descriptions: {
+        drex: "Principal Blockchain Engineer on Brazil's Central Bank CBDC pilot. Privacy infrastructure with ZKP, FX tokenization with DvP, and Visa VTAP integration",
+        "crypto-libs": "Open-source cryptography libraries with 166k+ aggregate downloads across PyPI, crates.io, and npm",
+        "blockchain-eng": "6+ years building blockchain infrastructure — from L1 protocols to DeFi platforms and smart contracts",
+        education: "Blockchain education and developer relations, from content creation to academic programs",
+      },
+      milestoneDescriptions: {
+        "drex.VISA / XP": "Visa VTAP integration with DREX for cross-chain tokenized asset (RWA) interoperability. FX tokenization with atomic DvP settlement",
+        "drex.Tecban / Clearsale": "Privacy infrastructure with ZKP (Parfim/Anonymous Zether). Decentralized DID with Hyperledger Indy for Brazil's largest anti-fraud company",
+        "crypto-libs.Merkly": "Most-used Python library for Merkle Trees in blockchain — 72k+ downloads on PyPI, 82 GitHub stars. Supports keccak-256 and custom hashes",
+        "crypto-libs.Keccaky": "Optimized Python implementation of Keccak-256 hash for blockchain applications — 15k+ downloads on PyPI",
+        "crypto-libs.ed25519-axolotl": "Ed25519 signatures with X25519 keys, Axolotl-style — 35k+ combined downloads on PyPI and crates.io",
+        "crypto-libs.BrBitcoin": "Multi-language Bitcoin SDK (Python, TypeScript, Rust). Layered design with simple API and low-level access, with key zeroisation",
+        "blockchain-eng.Stellar": "Official Stellar Ambassador Brazil. Soroban smart contracts, hackathons, and protocol contributions",
+        "blockchain-eng.Lunes": "Lead Blockchain Engineer on L1 protocol. SDK in JS, Python, and Rust. Reduced sync time by 83% and led CI/CD with GitLab",
+        "blockchain-eng.OnePercent": "Senior Blockchain Engineer — agro debt tokenization platform (CAPEX). TypeScript backend, security, and BaaS integrations with CNH and Corteva clients",
+        "blockchain-eng.Extracto DAO": "Led 4-engineer squad. Smart contracts for decentralized commodities futures market, GraphQL indexer, and 30% front-end performance boost",
+        "education.FloripaWeb3": "Founded Florianópolis Web3 community — in-person events, networking, and dev onboarding",
+        "education.YouTube": "Channel from 0 to 20k subscribers. 30days/30blockchains challenge building a different blockchain project every day. Rust, Stellar, Optimism, StarkNet, and Solidity/ENS bootcamps",
+        "education.NearX": "Head of Education. Created Brazil's first accredited Blockchain postgraduate program, 10+ hackathons, mentored 100+ devs Web2→Web3",
+      },
     },
     hackathons: {
       sectionLabel: "03 / Hackathons",
@@ -78,14 +120,35 @@ export const translations = {
   es: {
     hero: {
       headline:
-        "Matemático\u00A0\u00A0|\u00A0\u00A0Ingeniero de Criptografía\u00A0\u00A0|\u00A0\u00A0Embajador Oficial Stellar Brasil",
-      metricDownloads: "descargas en libs de criptografía",
+        "Matemático\u00A0\u00A0|\u00A0\u00A0Ingeniero de Criptografía\u00A0\u00A0|\u00A0\u00A0Senior Blockchain Engineer",
+      metricDownloads: "descargas en 16 libs open-source",
       metricStudents: "estudiantes",
       metricExperience: "años de experiencia en blockchain",
     },
     projetos: {
       sectionLabel: "02 / Proyectos",
       viewProject: "Ver Proyecto",
+      descriptions: {
+        drex: "Principal Blockchain Engineer en el piloto CBDC del Banco Central de Brasil. Infraestructura de privacidad con ZKP, tokenización de cambio con DvP e integración Visa VTAP",
+        "crypto-libs": "Bibliotecas open-source de criptografía con 166k+ descargas agregadas entre PyPI, crates.io y npm",
+        "blockchain-eng": "6+ años construyendo infraestructura blockchain — de protocolos L1 a plataformas DeFi y smart contracts",
+        education: "Educación y developer relations en blockchain, del contenido a la formación académica",
+      },
+      milestoneDescriptions: {
+        "drex.VISA / XP": "Integración Visa VTAP con DREX para interoperabilidad cross-chain de activos tokenizados (RWA). Tokenización de cambio con settlement atómico DvP",
+        "drex.Tecban / Clearsale": "Infraestructura de privacidad con ZKP (Parfim/Anonymous Zether). DID descentralizado con Hyperledger Indy para la mayor empresa anti-fraude de Brasil",
+        "crypto-libs.Merkly": "Biblioteca Python más usada para Merkle Trees en blockchain — 72k+ descargas en PyPI, 82 stars en GitHub. Soporte para keccak-256 y hashes personalizados",
+        "crypto-libs.Keccaky": "Implementación Python optimizada del hash Keccak-256 para aplicaciones blockchain — 15k+ descargas en PyPI",
+        "crypto-libs.ed25519-axolotl": "Firmas Ed25519 con claves X25519, estilo Axolotl — 35k+ descargas combinadas en PyPI y crates.io",
+        "crypto-libs.BrBitcoin": "SDK Bitcoin multi-lenguaje (Python, TypeScript, Rust). Diseño en capas con API simple y acceso low-level, con zeroización de claves",
+        "blockchain-eng.Stellar": "Embajador oficial Stellar Brasil. Smart contracts Soroban, hackathons y contribuciones al protocolo",
+        "blockchain-eng.Lunes": "Lead Blockchain Engineer en protocolo L1. SDK en JS, Python y Rust. Redujo tiempo de sync en 83% y lideró CI/CD con GitLab",
+        "blockchain-eng.OnePercent": "Senior Blockchain Engineer — plataforma de tokenización de deudas agro (CAPEX). Backend TypeScript, seguridad e integraciones BaaS con clientes CNH y Corteva",
+        "blockchain-eng.Extracto DAO": "Lideró squad de 4 ingenieros. Smart contracts para mercado de commodities descentralizado, indexer GraphQL y 30% de ganancia en performance",
+        "education.FloripaWeb3": "Fundador de la comunidad Web3 de Florianópolis — eventos presenciales, networking y onboarding de devs",
+        "education.YouTube": "Canal de 0 a 20k suscriptores. Desafío 30días/30blockchains construyendo un proyecto blockchain diferente por día. Bootcamps de Rust, Stellar, Optimism, StarkNet y Solidity/ENS",
+        "education.NearX": "Head of Education. Creó el primer programa de posgrado en Blockchain de Brasil, 10+ hackathons, mentoreó 100+ devs Web2→Web3",
+      },
     },
     hackathons: {
       sectionLabel: "03 / Hackathons",

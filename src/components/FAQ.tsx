@@ -29,7 +29,7 @@ const FAQ = () => {
     {
       question: "Qual seu papel como Head of Education na NearX?",
       answer:
-        "Lidero equipe de 3 profissionais criando programas educacionais em blockchain. Desenvolvi o primeiro programa de pós-graduação lato sensu em Blockchain Engineering do Brasil, organizei 10+ bootcamps (8000+ alunos), e cresci canal YouTube de 0 a 20k inscritos.",
+        "Lidero equipe de 3 profissionais criando programas educacionais em blockchain. Desenvolvi o primeiro programa de pós-graduação lato sensu em Blockchain Engineering do Brasil, organizei 10+ bootcamps (≈100 alunos), e cresci canal YouTube de 0 a 20k inscritos.",
     },
     {
       question: "Qual sua experiência com DREX?",
@@ -44,7 +44,7 @@ const FAQ = () => {
     {
       question: "Como você se mantém atualizado?",
       answer:
-        "Participação ativa em comunidades (Stellar, Ethereum, OpenSense), leitura de EIPs/RFCs, contribuições open-source (Merkly com 55k+ downloads), organização de hackathons, e networking em conferências. Também ensino 2500+ estudantes, o que me força a estar sempre atualizado.",
+        "Participação ativa em comunidades (Stellar, Ethereum, OpenSense), leitura de EIPs/RFCs, contribuições open-source (Merkly com 105k+ downloads), organização de hackathons, e networking em conferências. Também ensino 2500+ estudantes, o que me força a estar sempre atualizado.",
     },
   ];
 

@@ -153,11 +153,11 @@ export default function FontSamples() {
                   </p>
                   <div className="flex gap-12 mt-4">
                     <div>
-                      <span className="text-5xl text-[var(--accent)]">58.967</span>
+                      <span className="text-5xl text-[var(--accent)]">105k+</span>
                       <span className="text-sm text-neutral-500 block uppercase">downloads</span>
                     </div>
                     <div>
-                      <span className="text-5xl text-[var(--accent)]">8000+</span>
+                      <span className="text-5xl text-[var(--accent)]">≈100</span>
                       <span className="text-sm text-neutral-500 block uppercase">alunos</span>
                     </div>
                     <div>

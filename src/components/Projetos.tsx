@@ -20,7 +20,7 @@ const Projetos = () => {
     },
     {
       title: "NearX Education Platform",
-      description: "Head of Education criando programa de pós-graduação em Blockchain, bootcamps e conteúdo educacional para 8000+ alunos na LATAM",
+      description: "Head of Education criando programa de pós-graduação em Blockchain, bootcamps e conteúdo educacional para ≈100 alunos na LATAM",
       tech: ["Education", "Web3", "Rust", "Solidity"],
       image: "🎓",
       link: "https://nearx.com.br"

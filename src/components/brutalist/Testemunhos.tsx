@@ -154,7 +154,7 @@ export function Testemunhos() {
                 className="text-sm uppercase tracking-[0.2em] font-bold border px-6 py-3 hover:bg-[var(--accent)] hover:text-white transition-colors duration-200"
                 style={{ color: theme.accentText, borderColor: theme.accentText }}
               >
-                LinkedIn &rarr;
+                View on LinkedIn &rarr;
               </a>
             </div>
           </div>

@@ -1,0 +1,44 @@
+# Lucas Oliveira — olivmath
+
+> Senior Blockchain Engineer & Cryptography Specialist
+
+## About
+
+Lucas Bispo de Oliveira (olivmath) is a Senior Blockchain Engineer based in Florianópolis, SC, Brazil, with 6+ years of experience architecting, building, and securing blockchain systems.
+
+## Current Roles
+
+- Principal Blockchain Engineer at DREX (Brazil's Central Bank Digital Currency — CBDC)
+- Head of Education at NearX (8000+ students trained in blockchain)
+- Official Stellar Ambassador for Brazil
+
+## Key Projects
+
+- **DREX**: Principal Engineer on Brazil's CBDC project. Smart contract architecture and privacy infrastructure with ZKP on Hyperledger Besu.
+- **Merkly**: Most-used Python library for Merkle Trees in blockchain. 55k+ downloads on PyPI. Open source at github.com/olivmath/merkly.
+- **Lunes L1 Protocol**: Tech Lead developing a token-centric L1 protocol. Achieved 83% sync time reduction.
+- **PostGraduation Program**: Created and leads the blockchain postgrad program at NearX, training 8000+ students across Latin America.
+
+## Technical Expertise
+
+- Languages: Rust, Solidity, Python, Scala, TypeScript
+- Domains: Smart Contracts, Zero Knowledge Proofs, CBDC, DeFi, Merkle Trees, Cryptography
+- Protocols: Ethereum, Stellar/Soroban, XRPL, Hyperledger Besu, Chiliz
+
+## Hackathon Achievements
+
+- 1st Place — Stellar Hackathon 2024 (Argentina)
+- 2nd Place — Chiliz Hackathon 2024 (Global)
+- 2nd Place — XRPL Hackathon 2025 (Brazil)
+- 5th Place — Rayls Hackathon 2025 (Argentina)
+- Honorable Mention — Stellar ZKGame 2026 (Global)
+- 2nd Place — NASA Space Apps 2022 (Florianópolis)
+
+## Contact
+
+- GitHub: github.com/olivmath
+- LinkedIn: linkedin.com/in/olivmath
+- Twitter: twitter.com/olivmath_
+- Email: lucas@protonmail.com
+- WhatsApp: +55 (48) 99901-3089
+- Website: olivmath.vercel.app

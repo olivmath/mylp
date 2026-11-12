@@ -179,7 +179,7 @@ const Hero = () => {
             <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
               6+ years architecting, building, and securing blockchain systems.
               Principal Engineer at DREX (Brazil's CBDC), Head of Education at NearX,
-              and 4x Web3 hackathon winner. Creator of Merkly (55k+ downloads) and
+              and 4x Web3 hackathon winner. Creator of Merkly (105k+ downloads) and
               Stellar Ambassador.
             </p>
 
