@@ -77,7 +77,7 @@ export const projects = [
     title: "Blockchain Engineering",
     tech: ["Stellar", "Soroban", "Rust", "Scala", "Solidity", "DeFi"],
     link: "https://github.com/olivmath",
-    images: ["/mentor-meridian.jpg", "/meridian-friends.jpg"],
+    images: ["/mentor-meridian.jpg"],
     links: [
       { label: "Stellar Foundation", href: "https://stellar.org" },
       { label: "Lunes Protocol", href: "https://lunes.io" },
