@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { CloudShader } from "@/components/ui/cloud-shader";
 
 const Hero = () => {
   const companies = [
@@ -129,13 +130,16 @@ const Hero = () => {
         }
       `}</style>
 
-      <section className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-          <div className="absolute top-3/4 right-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
-        </div>
+      <section className="min-h-screen relative overflow-hidden">
+        {/* Cloud shader background */}
+        <CloudShader
+          className="absolute inset-0"
+          speed={0.6}
+          count={5}
+          cloudColor="#e8e0f0"
+          skyTopColor="#1a1a2e"
+          skyBottomColor="#3a2d6b"
+        />
 
         {/* Header */}
         <header className="relative z-20 p-6">
@@ -178,7 +182,7 @@ const Hero = () => {
 
             <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
               6+ years architecting, building, and securing blockchain systems.
-              Principal Engineer at DREX (Brazil's CBDC), Head of Education at NearX,
+              Principal Engineer at DREX (Brazil&apos;s CBDC), Head of Education at NearX,
               and 4x Web3 hackathon winner. Creator of Merkly (105k+ downloads) and
               Stellar Ambassador.
             </p>
